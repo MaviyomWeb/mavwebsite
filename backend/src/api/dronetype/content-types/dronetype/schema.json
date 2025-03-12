@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dronetypes",
+  "info": {
+    "singularName": "dronetype",
+    "pluralName": "dronetypes",
+    "displayName": "dronetype",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    }
+  }
+}

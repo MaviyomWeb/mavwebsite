@@ -1,0 +1,569 @@
+{
+  "Header": {
+    "navLinks": {
+      "Home": { "id": "1", "label": "Home", "href": "/" },
+      "About": { "id": "2", "label": "About", "href": "/about-us" },
+      "Products": { "id": "3", "label": "Products", "subMenu": true },
+      "GCS": { "id": "4", "label": "GCS", "href": "/ground-control-station" },
+      "Blog": { "id": "5", "label": "Blog", "href": "/blog" },
+      "Contact": { "id": "6", "label": "Contact", "href": "/contact-us" }
+    },
+    "subNavLinks": {
+      "RotaryWings": {
+        "category": "Rotary Wings",
+        "products": {
+          "MaviyomX4": {
+            "href": "/products/product/maviyom-x4",
+            "label": "Maviyom X4",
+            "description": "Agile and discreet, the X4 is your solution for high-definition surveillance and rapid deployment.",
+            "image": "/X4.webp"
+          },
+          "T-100TetheredDrone": {
+            "href": "/products/product/maviyom-t-100-tethered-drone",
+            "label": "T-100 Tethered Drone",
+            "description": "Reliable and steady aerial oversight, providing continuous surveillance with an unwavering eye.",
+            "image": "/T100.webp"
+          },
+          "MaviyomX8": {
+            "href": "/products/product/maviyom-x8",
+            "label": "Maviyom X8",
+            "description": "Revolutionizing cargo delivery, the X8 brings speed and efficiency to critical logistics.",
+            "image": "/X8.webp"
+          }
+       
+        }
+      },
+      "FixedWings": {
+        "category": "Fixed Wings",
+        "products": {
+          "MaviyomVTOL2500E": {
+            "href": "/products/product/maviyom-vtol-2500-e-1",
+            "label": "Maviyom VTOL 2500-E",
+            "description": "Mapping and monitoring redefined, delivering expansive coverage and detailed imagery with exceptional flight endurance.",
+            "image": "/VTOL-2500E.webp"
+          },
+          "MaviyomVTOLV3800H": {
+            "href": "/products/product/maviyom-vtol-3800-h",
+            "label": "Maviyom VTOL V3800-H",
+            "description": "A hybrid UAV offering extensive range and payload capacity for in-depth aerial reconnaissance.",
+            "image": "/VTOL-3800H.webp"
+          },
+          "MaviyomVTOL3900H": {
+            "href": "/products/product/maviyom-vtol-3900-h",
+            "label": "Maviyom VTOL 3900-H",
+            "description": "Pioneering long-duration flights for comprehensive mapping and critical data collection.",
+            "image": "/VTOL-3900H.webp"
+          }
+        }
+      }
+    },
+    "getInTouch": "Get in Touch",
+    "chooseLanguage": "Choose a language"
+   
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, hi {Hindi} en {English} other {Unknown}}"
+  },
+  "HomePage": {
+    "HeroBanner": {
+      "title": "New Horizons: The journey with Maviyom Drones Starts Now",
+      "subtitle": "Embark on an unparalleled aerial journey with Maviyom's state-of-the-art drones. Precision-engineered for excellence, our drones are your partners in unlocking new perspectives and possibilities.",
+      "explore": "Explore Now"
+    },
+    "WhatWeServe": {
+      "subtitle": "What We Serve",
+      "title": "Elevate Your Operations",
+      "description": "Harness our drone's advanced capabilities for superior performance and reliability in every mission.",
+      "services": {
+        "precisionTargeting": {
+          "title": "Precision Targeting",
+          "description": "Capture your world with unparalleled clarity using our advanced imaging technology",
+          "svgSrc": "/camera_zoom_1.svg",
+          "additionalInfo": "50mm lens"
+        },
+        "rapidDeployment": {
+          "title": "Rapid Deployment",
+          "description": "Experience the thrill of speed with drones designed for swift mobilization and response.",
+          "svgSrc": "/wing-1.svg",
+          "additionalInfo": "130 km/hr"
+        },
+        "enduringPerformance": {
+          "title": "Enduring Performance",
+          "description": "Benefit from extended flight times with our energy-efficient designs for long-lasting missions.",
+          "svgSrc": "/wing-2.svg",
+          "additionalInfo": "3-4 hours"
+        }
+      }
+    },
+    "why_choose_maviyom": {
+      "title": "Why Choose Maviyom",
+      "subtitle": "Unmatched Aerial Excellence",
+      "pledge": {
+        "title": "Our Pledge: Exceptional Drones & Expertise",
+        "description": "At Maviyom Aviation, we're elevating drone technology new heights with relentless innovation and unwavering quality. We design specialized solutions for diverse sectors, integrating an eco-friendly mindset with progressive development. Our commitment is to the customer, the community, and the global stage, ensuring adherence to strict regulatory standards. <span>Join us at the forefront of drone innovation – where your vision takes flight.</span>"
+      },
+      "benefits": {
+        "designExcellence": {
+          "benefit": "Design Excellence"
+        },
+        "engineeredWithIntent": {
+          "benefit": "Engineered with Intent"
+        },
+        "impactfulReach": {
+          "benefit": "Impactful Reach"
+        },
+        "forwardMomentum": {
+          "benefit": "Forward Momentum"
+        }
+      },
+      "learn_more": "Learn More",
+      "image_caption": "Join us in shaping the future of drone innovation"
+    }
+  },
+
+  "CTASection": {
+    "title": "Navigate the Future with Maviyom Aviation",
+    "description": "Connect with us today for comprehensive information and expert guidance on revolutionizing your drone experience."
+  },
+
+  "AboutPage": {
+    "about_company": {
+      "section_title": "About Company",
+      "headline": "Maviyom Aviation: Elevating Innovation",
+      "description": "At Maviyom Aviation, we are committed to transcending the ordinary. Our aim is not merely to provide efficient and effective services but to do so with elegance and precision, ensuring an unparalleled experience for our clients.",
+      "points": {
+        "forefront_of_drone_innovation": {
+          "icon": "forefront_of_drone_innovation",
+          "text": "Forefront of Drone Innovation"
+        },
+        "revolutionizing_industries": {
+          "icon": "revolutionizing_industries",
+          "text": "Revolutionizing Industries"
+        },
+        "global_ambition": {
+          "icon": "global_ambition",
+          "text": "Global Ambition in Drone Excellence"
+        }
+      },
+      "discover_more_button": "Discover More",
+      "about_image_alt": "designs",
+      "section_image": {
+        "src": "/maviyom-new-home.webp",
+        "alt": "about"
+      },
+      "footer_description": "Maviyom Aviation is an emerging leader in the drone manufacturing sector, committed to innovating for the Indian skies and beyond. Our vision aligns with the government's aim to position India as a premier global drone hub by 2030. We craft drones tailored to meet the diverse needs of our customers, supporting applications across defence, surveying, and delivery. By offering high-quality drones at competitive prices, Maviyom is at the forefront of shaping the future of India's drone industry."
+    },
+    "mission": {
+      "title": "Our <em>Mission</em>",
+      "description": "We are dedicated to elevating the potential of industries and individuals with cutting-edge drone (UAV) technology. Our pursuit is to not just innovate, but to redefine possibilities.",
+      "imageSrc": "/mission-img.webp",
+      "points": {
+        "catalyzing-industrial-evolution": {
+          "title": "Catalyzing Industrial Evolution",
+          "description": "User-centric drone solutions designed to enhance productivity, safety, and strategic growth.",
+          "icon": "/catalyzing-industrial-evolution.svg"
+        },
+        "architecting-tomorrows-tech": {
+          "title": "Architecting Tomorrow's Tech",
+          "description": "Pioneering advanced UAV solutions for a sustainable and secure future.",
+          "icon": "/architecting-tomorrows-tech.svg"
+        },
+        "fostering-synergy-and-insight": {
+          "title": "Fostering Synergy and Insight",
+          "description": "Fusing creativity with collaboration to drive educational and technological breakthroughs in UAV development",
+          "icon": "/fostering-synergy-and-insight.svg"
+        },
+        "driving-change-through-innovation": {
+          "title": "Driving Change Through Innovation",
+          "description": "Delivering UAV innovations for humanitarian efforts and complex problem-solving.",
+          "icon": "/driving-change-through-innovation.svg"
+        }
+      }
+    },
+    "our_vision": {
+      "title": "Our Vision",
+      "description": "Maviyom Aviation is on a journey to become a respected name in drone technology, advancing the frontiers of aerial innovation. We are dedicated to delivering sophisticated yet accessible solutions that serve both industrial and commercial needs. Our commitment to sustainable practices guides our pursuit of excellence, ensuring we provide not just products, but a full spectrum of support and services. In our quest for continual improvement, we aim to contribute meaningful advancements, set attainable benchmarks, and positively impact the way we live and work with drone technology."
+    },
+    "team_section": {
+      "title": "Our Dedicated Team",
+      "members": {
+        "chairman": {
+          "role": "Chairman of the Board",
+          "name": "Manmohan Aggarwal",
+          "description": "With over 27 years of experience across global markets, Mr. Manmohan Aggarwal, our Chairman, is known for his market intuition and exceptional ability to transform trends into business victories. His leadership is a cornerstone, setting our course towards remarkable achievements.",
+          "imageSrc": "/manmohan-aggarwal.webp"
+        },
+        "ceo": {
+          "role": "CEO",
+          "name": "Mridul Aggarwal",
+          "description": "Mridul Aggarwal, our CEO, combines youthful energy with deep expertise in mechanical and aerospace engineering, steering Maviyom with sharp business insights and a passion for innovation that challenges the frontiers of the drone industry.",
+          "imageSrc": "/mridul-aggarwal.webp"
+        },
+        "coo": {
+          "role": "COO",
+          "name": "Brijesh Sharma",
+          "description": "Brijesh Sharma, our COO, is a virtuoso of technology whose masterful understanding of aerospace engineering and production propels our operational excellence. His strategic and technological expertise ensures Maviyom's operations remain efficient and on the cutting edge.",
+          "imageSrc": "/brijesh-sharma.webp"
+        },
+        "cto": {
+          "role": "CTO",
+          "name": "Akshay Verma",
+          "description": "Akshay Verma, our CTO, is at the helm of our technological strategy, integrating AI and software development with an ethical approach that guides Maviyom's responsible yet pioneering advancements in UAV technology.",
+          "imageSrc": "/akshay-verma.webp"
+        }
+      }
+    }
+  },
+
+  "GroundControlSystemPage": {
+    "Banner": "Ground Control System",
+    "GroundControlSystem": {
+      "GCS1": {
+        "GCS_Number": "1",
+        "Header": "GCS-1",
+        "imgSrc": "/GCS_1_1.webp",
+        "Specs": {
+          "grossWeight": {
+            "Label": "Gross Weight",
+            "Value": "5.98 kg"
+          },
+          "operatingTemperature": {
+            "Label": "Operating Temperature",
+            "Value": "-20°C to +55°C"
+          },
+          "cpu": {
+            "Label": "CPU",
+            "Value": "Intel i7 8565U (standard), /n Intel 10500U (upgrade for future)"
+          },
+          "operatingSystem": {
+            "Label": "Operating System",
+            "Value": "Win7/win10/Linux"
+          },
+          "serialPort": {
+            "Label": "Serial Port",
+            "Value": "RS232x3, SBUS in/out"
+          },
+          "externalInterface": {
+            "Label": "External Interface",
+            "Value": "USB3.0, LAN, HDMI in, VGA out, Hi-fi"
+          },
+          "dimensions": {
+            "Label": "Dimensions",
+            "Value": "354mm (L) x 280mm (W) x 80mm (H)"
+          },
+          "displayScreen": {
+            "Label": "Display Screen",
+            "Value": "13.3\" 1920x1080, 1000 nit (top screen), /n 12.1\" 1280x800, 1500 nit (bottom screen)"
+          },
+          "memory": {
+            "Label": "Memory",
+            "Value": "8 GB (standard), 32 GB max"
+          },
+          "storage": {
+            "Label": "Storage",
+            "Value": "256 GB SSD (standard), 1 TB Max."
+          },
+          "networkPort": {
+            "Label": "Network Port",
+            "Value": "WIFI/Bluetooth (standard), 4G (optional)"
+          }
+        }
+      },
+      "GCS2": {
+        "GCS_Number": "2",
+        "Header": "GCS-2",
+        "imgSrc": "/GCS_2.webp",
+        "Specs": {
+          "grossWeight": {
+            "Label": "Gross Weight",
+            "Value": "0.61 kg"
+          },
+          "operationTemperature": {
+            "Label": "Operation Temperature",
+            "Value": "-20°C to +60°C"
+          },
+          "dimensions": {
+            "Label": "Dimensions",
+            "Value": "195mm (L) x 170mm (W) x 115mm (H)"
+          },
+          "displayScreen": {
+            "Label": "Display Screen",
+            "Value": "2.8° 240x320 high brightness colorful LCD Screen"
+          },
+          "batteryLife": {
+            "Label": "Battery Life",
+            "Value": "12 hours"
+          },
+          "outputChannels": {
+            "Label": "Output Channels",
+            "Value": "26 Physical, 16 Sky Station Output Channels"
+          }
+        }
+      },
+      "GCS3": {
+        "GCS_Number": "3",
+        "Header": "GCS-3",
+        "imgSrc": "/GCS_3.webp",
+        "Specs": {
+          "grossWeight": {
+            "Label": "Gross Weight",
+            "Value": "1.034 kg"
+          },
+          "operationTemperature": {
+            "Label": "Operation Temperature",
+            "Value": "-20°C to +60°C"
+          },
+          "dimensions": {
+            "Label": "Dimensions",
+            "Value": "272mm (L) x 183mm (W) x 94mm (H)"
+          },
+          "displayScreen": {
+            "Label": "Display Screen",
+            "Value": "7” 1920x1200 high brightness colorful FHD Screen"
+          },
+          "batteryLife": {
+            "Label": "Battery Life",
+            "Value": "6-12 hours"
+          },
+          "channels": {
+            "Label": "Channels",
+            "Value": "16 Channels"
+          },
+          "operatingSystem": {
+            "Label": "Operating System",
+            "Value": "Android"
+          }
+        }
+      },
+      "GCS4": {
+        "GCS_Number": "4",
+        "Header": "GCS-4",
+        "imgSrc": "/GCS_4.webp",
+        "Specs": {
+          "grossWeight": {
+            "Label": "Gross Weight",
+            "Value": "3.1 kg"
+          },
+          "operationTemperature": {
+            "Label": "Operation Temperature",
+            "Value": "-10°C to +60°C"
+          },
+          "cpu": {
+            "Label": "CPU",
+            "Value": "Intel i7 5th generation 5500U"
+          },
+          "operatingSystem": {
+            "Label": "Operating System",
+            "Value": "Win 10"
+          },
+          "externalInterface": {
+            "Label": "External Interface",
+            "Value": "USB3.0, 4G card slot, LAN, Audio, Amplifier, HDMI"
+          },
+          "dimensions": {
+            "Label": "Dimensions",
+            "Value": "364mm (L) x 190mm (W) x 40mm (H)"
+          },
+          "displayScreen": {
+            "Label": "Display Screen",
+            "Value": "10.1 inch + touch screen + 800cd /n sunlight readable screen 1920x1200px"
+          },
+          "memory": {
+            "Label": "Memory",
+            "Value": "8GB"
+          },
+          "storage": {
+            "Label": "Storage",
+            "Value": "128GB"
+          },
+          "networkPort": {
+            "Label": "Network Port",
+            "Value": "WIFI / Bluetooth(standard) 4G(optional)"
+          }
+        }
+      }
+    }
+  },
+
+  "ContactPage": {
+    "ContactHeader": {
+      "Heading": "Contact Us"
+    },
+
+    "ConnectWithUs": "Connect with Maviyom Aviation Pvt. Ltd. – we’re here to listen. Whether you're looking to explore the skies with our drones or seeking innovative solutions, our team is eager to discuss how we can take your ambitions to new heights. Contact us today and let's navigate the future together.",
+
+    "ContactAddress": {
+      "Email": {
+        "Label": "Our Email Address",
+        "Value": "info@maviyom.com"
+      },
+      "Phone": {
+        "Label": "Our Contact Details",
+        "Value": "(+91) 011-4563-5630"
+      },
+      "Locations": {
+        "Heading": "Our Locations",
+        "LocationsList": {
+          "Head Office": {
+            "Title": "Head Office",
+            "Address": "214, Second Floor, Competent House, F-Block, Middle Circle, Connaught Place, New Delhi - 110001."
+          },
+          "Manufacturing Facility": {
+            "Title": "Manufacturing Facility",
+            "Address": "Haridwar, Uttarakhand"
+          },
+          "Overseas Office": {
+            "Title": "Overseas Office",
+            "Address": "Maputo, Mozambique"
+          }
+        }
+      }
+    },
+    "GetInTouch": {
+      "Heading": "Get In Touch",
+      "Description": "Ready to take your ventures sky-high with cutting-edge drone solutions? Connect with Maviyom Aviation Pvt. Ltd.",
+      "Email": "info@maviyom.com",
+      "PhoneNumber": "(+91) 011-4563-5630",
+      "Button": "Reach Out Now"
+    },
+    "ContactForm": {
+      "FullName": "Full Name",
+      "Email": "Email",
+      "PhoneNumber": "Phone Number",
+      "OrganizationName": "Organization Name",
+      "Message": "Message",
+      "SubmitButton": "Reach Out Now",
+      "ValidationMessages": {
+        "FullName": "Please enter your Name",
+        "PhoneNumberRequired": "Please enter your Number",
+        "PhoneNumberPattern": "Please enter a valid number",
+        "EmailRequired": "Please enter your Mail Id",
+        "EmailPattern": "Please enter a valid email address"
+      },
+      "ToastMessage": "Message sent successfully!"
+    }
+  },
+
+  "Footer": {
+    "description": "Explore the Skies: Elevate Your Experience with Our Cutting-Edge Drones – Where Technology Takes Wings!",
+    "footerLinks": {
+      "products": {
+        "title": "Products",
+        "links": {
+          "uavs": { "label": "UAVs", "href": "/products" },
+          "groundControlStations": {
+            "label": "Ground Control Stations",
+            "href": "/ground-control-station"
+          }
+        }
+      },
+      "quickLinks": {
+        "title": "Quick Links",
+        "links": {
+          "aboutUs": { "label": "About Maviyom", "href": "/about-us" },
+          "contactUs": { "label": "Contact Us", "href": "/contact-us" },
+          "blog": { "label": "Blog", "href": "/blog" }
+        }
+      }
+    },
+    "contactInfo": {
+      "title": "Contact Us",
+      "links": {
+        "officeContact": {
+          "label": "Office Contact",
+          "value": "(+91) 011-4563-5630"
+        },
+        "emailAddress": {
+          "label": "Email Address",
+          "value": "info@maviyom.com"
+        },
+        "visitOffice": {
+          "label": "Visit Office",
+          "value": "214, Second Floor, Competent House, F-Block, Middle Circle, Connaught Place, New Delhi - 110001."
+        }
+      }
+    },
+    "termsAndConditions": "Terms & Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "copyright": "© 2024 Copyrights by Maviyom Aviation"
+  },
+  "TermsAndConditionsPage": {
+    "title": "Terms and Conditions",
+    "info": "Welcome to Maviyom, a leading drone manufacturing and aviation company. By accessing and using our website, you agree to comply with the following Terms and Conditions:",
+    "sections": {
+      "intellectual_property": {
+        "title": "Intellectual Property",
+        "content": {
+          "text1": "All content, materials, logos, and trademarks displayed on our website are the property of Maviyom or their respective owners. You must not reproduce, distribute, modify, or use any of our intellectual property without obtaining prior written consent."
+        }
+      },
+      "use_of_website": {
+        "title": "Use of Website",
+        "content": {
+          "text1": "You may use our website for personal, non-commercial purposes related to the exploration, purchase, or support of our drone products and services. Any unauthorized use or misuse of our website is strictly prohibited."
+        }
+      },
+      "drone_operation_and_safety": {
+        "title": "Drone Operation and Safety",
+        "content": {
+          "text1": "When operating our drones, you agree to comply with all applicable laws, regulations, and safety guidelines. This includes obtaining necessary licenses, respecting privacy, and adhering to airspace restrictions.",
+          "text2": "It is your responsibility to operate our drones safely and responsibly."
+        }
+      },
+      "limitation_of_liability": {
+        "title": "Limitation of Liability",
+        "content": {
+          "text1": "While we strive to provide accurate information, our website may contain errors or inaccuracies. We are not liable for any direct, indirect, incidental, or consequential damages arising from your use or reliance on the information provided on our website.",
+          "text2": "Maviyom shall not be held responsible for any damages or losses incurred during the operation of our drones or as a result of their use."
+        }
+      },
+      "indemnification": {
+        "title": "Indemnification",
+        "content": {
+          "text1": "By using our website and services, you agree to indemnify and hold Maviyom, its affiliates, employees, and partners harmless from any claims, losses, damages, liabilities, and expenses (including legal fees) arising out of your use of our website, violation of these Terms and Conditions, or infringement of any third-party rights."
+        }
+      }
+    }
+  },
+  "PrivacyPolicyPage": {
+    "title": "Privacy Policy",
+    "info": "Maviyom, an innovative drone manufacturing and aviation company, prioritizes the privacy of your personal information. You can read this Privacy Policy to learn more about how we collect, utilize, and protect your personal information whenever you engage with our website and services. You agree to the terms of this Privacy Policy when you access or use our website.",
+    "sections": {
+      "information_we_collect": {
+        "title": "Information We Collect",
+        "content": {
+          "text1": "Personal Information: When you engage with our website or services, we may collect personal information such as your name, email address, phone number, and shipping address. We may also collect additional information necessary for specific services or transactions.",
+          "text2": "Usage Information: We may gather non-personal information about your interactions with our website, including IP address, browser type, device information, and usage patterns. This information helps us analyze and improve our website and services.",
+          "text3": "Cookies: To enhance your browsing experience, we may utilize cookies and similar technologies. These cookies may collect information about your preferences, sessions, and interactions with our website."
+        }
+      },
+      "how_we_use_your_information": {
+        "title": "How We Use Your Information",
+        "content": {
+          "text1": "Personal Information: We use your personal information to fulfill orders, provide customer support, communicate important updates, and send promotional materials related to our drone products and services.",
+          "text2": "Usage Information: Non-personal information is used to analyze website usage patterns, monitor website performance, and make enhancements to provide you with a seamless experience."
+        }
+      },
+      "data_security": {
+        "title": "Data Security",
+        "content": {
+          "text1": "We employ industry-standard security measures to protect your personal information against unauthorized access, alteration, or disclosure. This includes encryption, firewalls, access controls, and regular security audits.",
+          "text2": "However, please be aware that no data transmission over the internet or electronic storage method is completely secure. While we strive to protect your information, we cannot guarantee absolute security."
+        }
+      },
+      "third_party_websites_and_services": {
+        "title": "Third-Party Websites and Services",
+        "content": {
+          "text1": "Our website may contain links to third-party websites or services. Please note that we are not responsible for their content or privacy practices. We encourage you to review the privacy policies of these third parties before providing any personal information."
+        }
+      },
+      "updates_to_privacy_policy": {
+        "title": "Updates to the Privacy Policy",
+        "content": {
+          "text1": "We reserve the right to modify or update this Privacy Policy at any time. Any changes will be effective immediately upon posting the revised policy on our website. By continuing to use our services after such changes, you accept and agree to the updated Privacy Policy."
+        }
+      }
+    }
+  }
+}

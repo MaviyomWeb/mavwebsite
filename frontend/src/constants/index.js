@@ -4,7 +4,6 @@ export const NAV_LINKS = [
   { id: uuidv4(), label: "Home", href: "/" },
   { id: uuidv4(), label: "About", href: "/about-us" },
   { id: uuidv4(), label: "Products", subMenu: true },
-  { id: uuidv4(), label: "GCS", href: "/ground-control-station" },
   { id: uuidv4(), label: "Blog", href: "/blog" },
   { id: uuidv4(), label: "Contact", href: "/contact-us" },
 ];

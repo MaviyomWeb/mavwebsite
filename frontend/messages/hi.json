@@ -4,11 +4,6 @@
       "Home": { "id": "1", "label": "होम", "href": "/" },
       "About": { "id": "2", "label": "हमारे बारे में", "href": "/about-us" },
       "Products": { "id": "3", "label": "उत्पाद", "subMenu": true },
-      "GCS": {
-        "id": "4",
-        "label": "जीसीएस",
-        "href": "/ground-control-station"
-      },
       "Blog": { "id": "5", "label": "ब्लॉग", "href": "/blog" },
       "Contact": { "id": "6", "label": "संपर्क करें", "href": "/contact-us" }
     },

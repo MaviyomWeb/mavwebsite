@@ -277,10 +277,6 @@
         "title": "उत्पाद",
         "links": {
           "uavs": { "label": "यूएवी", "href": "/products" }
-          // "groundControlStations": {
-          //   "label": "ग्राउंड कंट्रोल स्टेशन",
-          //   "href": "/ground-control-station"
-          // }
         }
       },
       "quickLinks": {

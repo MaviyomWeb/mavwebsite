@@ -1,11 +1,36 @@
 {
   "Header": {
     "navLinks": {
-      "Home": { "id": "1", "label": "Home", "href": "/" },
-      "About": { "id": "2", "label": "About", "href": "/about-us" },
-      "Products": { "id": "3", "label": "Products", "subMenu": true },
-      "Blog": { "id": "5", "label": "Blog", "href": "/blog" },
-      "Contact": { "id": "6", "label": "Contact", "href": "/contact-us" }
+      "Home": {
+        "id": "1",
+        "label": "Home",
+        "href": "/"
+      },
+      "About": {
+        "id": "2",
+        "label": "About",
+        "href": "/about-us"
+      },
+      "Products": {
+        "id": "3",
+        "label": "Products",
+        "subMenu": true
+      },
+      "Career": {
+        "id": "4",
+        "label": "Career",
+        "href": "/career"
+      },
+      "Blog": {
+        "id": "5",
+        "label": "Blog",
+        "href": "/blog"
+      },
+      "Contact": {
+        "id": "6",
+        "label": "Contact",
+        "href": "/contact-us"
+      }
     },
     "subNavLinks": {
       "RotaryWings": {
@@ -29,7 +54,6 @@
             "description": "Revolutionizing cargo delivery, the X8 brings speed and efficiency to critical logistics.",
             "image": "/X8.webp"
           }
-       
         }
       },
       "FixedWings": {
@@ -58,7 +82,6 @@
     },
     "getInTouch": "Get in Touch",
     "chooseLanguage": "Choose a language"
-   
   },
   "LocaleSwitcher": {
     "label": "Change language",
@@ -120,12 +143,10 @@
       "image_caption": "Join us in shaping the future of drone innovation"
     }
   },
-
   "CTASection": {
     "title": "Navigate the Future with Maviyom Aviation",
     "description": "Connect with us today for comprehensive information and expert guidance on revolutionizing your drone experience."
   },
-
   "AboutPage": {
     "about_company": {
       "section_title": "About Company",
@@ -214,14 +235,82 @@
       }
     }
   },
-
+  "CareerPage": {
+    "Banner": "Explore Careers at Maviyom",
+    "Careers": {
+      "DesignEngineer": {
+        "Header": "Design Engineer – UAV Systems",
+        "Description": "We’re looking for a driven and hands-on Design Engineer to join our growing UAV startup. This role is ideal for someone with around 3+ years of experience in mechanical design and development—who’s ready to take full ownership of the mechanical and electromechanical aspects of UAV systems. As a core team member, you’ll work across product design, structural systems, payload integration, and mechanical-electronics packaging—contributing directly to the development of reliable, high-performance UAV platforms from the ground up.",
+        "Responsibilities": [
+          "Design and develop UAV mechanical and electromechanical systems using modern CAD tools (e.g., SolidWorks, Fusion 360, AutoCAD).",
+          "Own the creation of detailed 2D/3D drawings, assemblies, and complete BOMs.",
+          "Perform simulations and design validation (FEA/CFD) to ensure structural and thermal performance.",
+          "Optimize designs for manufacturability, cost, assembly, and maintenance.",
+          "Work on payload mounts, airframes, motor mounts, and integration of propulsion and avionics systems.",
+          "Coordinate with electronics, flight systems, and manufacturing teams to ensure smooth integration and system-level reliability.",
+          "Assist in prototype builds, testing setups, and iterative design feedback loops.",
+          "Support flight testing, analyze performance data, and implement design improvements.",
+          "Work from first principles to create robust, scalable, and modular designs.",
+          "Evaluate and select materials and components suitable for lightweight, high-strength UAV applications (composites, polymers, aluminum, etc.).",
+          "Stay updated with new tools, materials, manufacturing techniques (CNC, 3D printing, injection molding, etc.).",
+          "Take full lifecycle ownership of designs—from concept through testing to production handover."
+        ],
+        "Qualifications": [
+          "Bachelor’s or Master’s in Mechanical, Aerospace, or related engineering discipline.",
+          "3+ years of experience in product design and mechanical system development, preferably in aerospace, UAVs, or manufacturing.",
+          "Proficiency in CAD tools (SolidWorks, Fusion 360, etc.) and experience creating assemblies and detailed drawings.",
+          "Familiarity with FEA/CFD tools for structural/thermal validation.",
+          "Knowledge of mechanical-electrical integration (e.g., housings, cable routing, thermal management).",
+          "Understanding of manufacturing processes (3D printing, machining, molding, sheet metal, etc.).",
+          "Strong analytical skills and solid foundation in mechanical fundamentals and materials science."
+        ],
+        "BonusSkills": [
+          "Experience designing UAV-specific components (airframes, mounts, enclosures, etc.).",
+          "Knowledge of GD&T, DFM/DFT principles, and aerospace-grade materials.",
+          "Exposure to flight testing and UAV performance analysis.",
+          "Experience working in a fast-paced R&D or hardware startup environment.",
+          "Familiarity with electronics packaging and wire harnessing."
+        ]
+      },
+      "ElectronicsEngineer": {
+        "Header": "Electronics Engineer – UAV Systems",
+        "Description": "We’re looking for a hands-on, cross-functional Electronics Engineer to join our core team and help develop the critical electronic systems powering our UAV platforms. If you're passionate about drones, embedded tech, and building real systems from scratch, this is your opportunity to own the electronics stack—from schematic to sky. In this high-impact role, you’ll be responsible for designing and implementing electronics hardware, embedded firmware, and wireless communication systems, while working closely with the mechanical, software, and flight systems teams.",
+        "Responsibilities": [
+          "Design, simulate, and develop PCBs for UAV subsystems including power distribution, sensor interfaces, and signal conditioning.",
+          "Select and integrate MCUs, IMUs, GPS modules, telemetry systems, and other electronic components.",
+          "Perform schematic capture, layout, and bring-up of electronic assemblies.",
+          "Lead hardware debugging and system validation during both lab and flight testing.",
+          "Develop embedded firmware for microcontrollers (preferably ARM Cortex-M, STM32).",
+          "Integrate and optimize communication protocols (UART, SPI, I2C, CAN) and sensor drivers.",
+          "Design and optimize wireless communication systems (RF, Wi-Fi, Cellular, LoRa) for command, control, and telemetry.",
+          "Collaborate with the mechanical team to integrate electronics into compact and rugged UAV platforms.",
+          "Assist in wire harnessing, EMI/EMC considerations, and enclosure design inputs.",
+          "Support flight testing, gather performance data, and implement iterative improvements."
+        ],
+        "Qualifications": [
+          "Bachelor’s or Master’s degree in Electronics, Electrical, or Electronics & Communication Engineering.",
+          "Minimum 3 years of experience in electronics product development, preferably in UAV, robotics, or aerospace sectors.",
+          "Strong grasp of analog/digital circuit design, embedded systems, and PCB layout.",
+          "Proficient in C/C++, microcontroller programming, and basic embedded systems debugging.",
+          "Familiar with PCB tools like Altium Designer, Eagle, or KiCAD.",
+          "Solid understanding of power systems (battery management, DC-DC converters), signal integrity, and sensor integration.",
+          "Hands-on experience with oscilloscopes, logic analyzers, and lab tools."
+        ],
+        "BonusSkills": [
+          "Experience with UAV flight controllers (PX4, ArduPilot) and telemetry hardware.",
+          "Knowledge of sensor fusion, IMU/GPS integration, or Kalman filtering.",
+          "Familiarity with RTOS, low-power firmware optimization, or fault-tolerant systems.",
+          "Exposure to scripting (e.g., Python) for automation, data logging, or hardware validation.",
+          "Understanding of aerospace or UAV compliance and regulatory standards."
+        ]
+      }
+    }
+  },
   "ContactPage": {
     "ContactHeader": {
       "Heading": "Contact Us"
     },
-
     "ConnectWithUs": "Connect with Maviyom Aviation Pvt. Ltd. – we’re here to listen. Whether you're looking to explore the skies with our drones or seeking innovative solutions, our team is eager to discuss how we can take your ambitions to new heights. Contact us today and let's navigate the future together.",
-
     "ContactAddress": {
       "Email": {
         "Label": "Our Email Address",
@@ -273,22 +362,37 @@
       "ToastMessage": "Message sent successfully!"
     }
   },
-
   "Footer": {
     "description": "Explore the Skies: Elevate Your Experience with Our Cutting-Edge Drones – Where Technology Takes Wings!",
     "footerLinks": {
       "products": {
         "title": "Products",
         "links": {
-          "uavs": { "label": "UAVs", "href": "/products" }
+          "uavs": {
+            "label": "UAVs",
+            "href": "/products"
+          }
         }
       },
       "quickLinks": {
         "title": "Quick Links",
         "links": {
-          "aboutUs": { "label": "About Maviyom", "href": "/about-us" },
-          "contactUs": { "label": "Contact Us", "href": "/contact-us" },
-          "blog": { "label": "Blog", "href": "/blog" }
+          "aboutUs": {
+            "label": "About Maviyom",
+            "href": "/about-us"
+          },
+          "contactUs": {
+            "label": "Contact Us",
+            "href": "/contact-us"
+          },
+          "blog": {
+            "label": "Blog",
+            "href": "/blog"
+          },
+          "Career": {
+            "label": "Career",
+            "href": "/career"
+          }
         }
       }
     },

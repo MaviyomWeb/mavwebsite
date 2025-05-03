@@ -4,6 +4,7 @@ export const NAV_LINKS = [
   { id: uuidv4(), label: "Home", href: "/" },
   { id: uuidv4(), label: "About", href: "/about-us" },
   { id: uuidv4(), label: "Products", subMenu: true },
+  { id: uuidv4(), label: "Career", href: "/career" },
   { id: uuidv4(), label: "Blog", href: "/blog" },
   { id: uuidv4(), label: "Contact", href: "/contact-us" },
 ];
@@ -154,7 +155,7 @@ export const FOOTER_LINKS = [
     title: "Products",
     links: [
       { label: "UAVs", href: "/products" },
-      // { label: "Ground Control Stations", href: "/ground-control-station" },
+      { label: "Career", href: "/career" },
     ],
   },
   {
@@ -218,99 +219,99 @@ export const GeneralUsageOfFixedWings = [
   "Agricultural and Municipality Usage.",
 ];
 
-// export const GCS_Details = [
-//   {
-//     GCS_Number: "1",
-//     droneSpecs: [
-//       { label: "Gross Weight", value: "5.98 kg" },
-//       { label: "Operating Temperature", value: "-20°C to +55°C" },
-//       {
-//         label: "CPU",
-//         value: "Intel i7 8565U (standard), Intel 10500U (upgrade for future)",
-//       },
-//       { label: "Operating System", value: "Win7/win10/Linux" },
-//       { label: "Serial Port", value: "RS232x3, SBUS in/out" },
-//       {
-//         label: "External Interface",
-//         value: "USB3.0, LAN, HDMI in, VGA out, Hi-fi",
-//       },
-//       { label: "Dimensions", value: "354mm (L) x 280mm (W) x 80mm (H)" },
-//       {
-//         label: "Display Screen",
-//         value:
-//           '13.3" 1920x1080, 1000 nit (top screen),/n 12.1" 1280x800, 1500 nit (bottom screen)',
-//       },
-//       { label: "Memory", value: "8 GB (standard), 32 GB max" },
-//       { label: "Storage", value: "256 GB SSD (standard), 1 TB Max." },
-//       {
-//         label: "Network Port",
-//         value: "WIFI/Bluetooth (standard), 4G (optional)",
-//       },
-//     ],
-//     images: ["/GCS_1_1.webp"], // Add image URLs or file names here
-//   },
-//   {
-//     GCS_Number: "2",
-//     droneSpecs: [
-//       { label: "Gross Weight", value: "0.61 kg" },
-//       { label: "Operation Temperature", value: "-20°C to +60°C" },
-//       { label: "Dimensions", value: "195mm (L) x 170mm (W) x 115mm (H)" },
-//       {
-//         label: "Display Screen",
-//         value: "2.8° 240x320 high brightness colorful LCD Screen",
-//       },
-//       { label: "Battery Life", value: "12 hours" },
-//       {
-//         label: "Output Channels",
-//         value: "26 Physical, 16 Sky Station Output Channels",
-//       },
-//     ],
-//     images: ["/GCS_2.webp"], // Add image URLs or file names here
-//   },
-//   {
-//     GCS_Number: "3",
-//     droneSpecs: [
-//       { label: "Gross Weight", value: "1.034 kg" },
-//       { label: "Operation Temperature", value: "-20°C to +60°C" },
-//       { label: "Dimensions", value: "272mm (L) x 183mm (W) x 94mm (H)" },
-//       {
-//         label: "Display Screen",
-//         value: "7” 1920x1200 high brightness colorful FHD Screen",
-//       },
-//       { label: "Battery Life", value: "6-12 hours" },
-//       { label: "Channels", value: "16 Channels" },
-//       { label: "Operating System", value: "Android" },
-//     ],
-//     images: ["/GCS_3.webp"], // Add image URLs or file names here
-//   },
-//   {
-//     GCS_Number: "4",
-//     droneSpecs: [
-//       { label: "Gross Weight", value: "3.1 kg" },
-//       { label: "Operation Temperature", value: "-10°C to +60°C" },
-//       { label: "CPU", value: "Intel i7 5th generation 5500U" },
-//       { label: "Operating System", value: "Win 10" },
-//       {
-//         label: "External Interface",
-//         value: "USB3.0, 4G card slot, LAN, Audio, Amplifier, HDMI",
-//       },
-//       { label: "Dimensions", value: "364mm (L) x 190mm (W) x 40mm (H)" },
-//       {
-//         label: "Display Screen",
-//         value:
-//           "10.1 inch + touch screen + 800cd /n sunlight readable screen 1920x1200px",
-//       },
-//       { label: "Memory", value: "8GB" },
-//       { label: "Storage", value: "128GB" },
-//       {
-//         label: "Network Port",
-//         value: "WIFI / Bluetooth(standard) 4G(optional)",
-//       },
-//     ],
-//     images: ["/GCS_4.webp"], // Add image URLs or file names here
-//   },
-//   // Repeat similar structures for other GCS items
-// ];
+export const GCS_Details = [
+  {
+    GCS_Number: "1",
+    droneSpecs: [
+      { label: "Gross Weight", value: "5.98 kg" },
+      { label: "Operating Temperature", value: "-20°C to +55°C" },
+      {
+        label: "CPU",
+        value: "Intel i7 8565U (standard), Intel 10500U (upgrade for future)",
+      },
+      { label: "Operating System", value: "Win7/win10/Linux" },
+      { label: "Serial Port", value: "RS232x3, SBUS in/out" },
+      {
+        label: "External Interface",
+        value: "USB3.0, LAN, HDMI in, VGA out, Hi-fi",
+      },
+      { label: "Dimensions", value: "354mm (L) x 280mm (W) x 80mm (H)" },
+      {
+        label: "Display Screen",
+        value:
+          '13.3" 1920x1080, 1000 nit (top screen),/n 12.1" 1280x800, 1500 nit (bottom screen)',
+      },
+      { label: "Memory", value: "8 GB (standard), 32 GB max" },
+      { label: "Storage", value: "256 GB SSD (standard), 1 TB Max." },
+      {
+        label: "Network Port",
+        value: "WIFI/Bluetooth (standard), 4G (optional)",
+      },
+    ],
+    images: ["/GCS_1_1.webp"], // Add image URLs or file names here
+  },
+  {
+    GCS_Number: "2",
+    droneSpecs: [
+      { label: "Gross Weight", value: "0.61 kg" },
+      { label: "Operation Temperature", value: "-20°C to +60°C" },
+      { label: "Dimensions", value: "195mm (L) x 170mm (W) x 115mm (H)" },
+      {
+        label: "Display Screen",
+        value: "2.8° 240x320 high brightness colorful LCD Screen",
+      },
+      { label: "Battery Life", value: "12 hours" },
+      {
+        label: "Output Channels",
+        value: "26 Physical, 16 Sky Station Output Channels",
+      },
+    ],
+    images: ["/GCS_2.webp"], // Add image URLs or file names here
+  },
+  {
+    GCS_Number: "3",
+    droneSpecs: [
+      { label: "Gross Weight", value: "1.034 kg" },
+      { label: "Operation Temperature", value: "-20°C to +60°C" },
+      { label: "Dimensions", value: "272mm (L) x 183mm (W) x 94mm (H)" },
+      {
+        label: "Display Screen",
+        value: "7” 1920x1200 high brightness colorful FHD Screen",
+      },
+      { label: "Battery Life", value: "6-12 hours" },
+      { label: "Channels", value: "16 Channels" },
+      { label: "Operating System", value: "Android" },
+    ],
+    images: ["/GCS_3.webp"], // Add image URLs or file names here
+  },
+  {
+    GCS_Number: "4",
+    droneSpecs: [
+      { label: "Gross Weight", value: "3.1 kg" },
+      { label: "Operation Temperature", value: "-10°C to +60°C" },
+      { label: "CPU", value: "Intel i7 5th generation 5500U" },
+      { label: "Operating System", value: "Win 10" },
+      {
+        label: "External Interface",
+        value: "USB3.0, 4G card slot, LAN, Audio, Amplifier, HDMI",
+      },
+      { label: "Dimensions", value: "364mm (L) x 190mm (W) x 40mm (H)" },
+      {
+        label: "Display Screen",
+        value:
+          "10.1 inch + touch screen + 800cd /n sunlight readable screen 1920x1200px",
+      },
+      { label: "Memory", value: "8GB" },
+      { label: "Storage", value: "128GB" },
+      {
+        label: "Network Port",
+        value: "WIFI / Bluetooth(standard) 4G(optional)",
+      },
+    ],
+    images: ["/GCS_4.webp"], // Add image URLs or file names here
+  },
+  // Repeat similar structures for other GCS items
+];
 
 export const TnCInfo = {
   title: "Terms and Conditions",

@@ -5,7 +5,15 @@ import emailjs from "@emailjs/browser";
 
 const CareerItem = ({ careerKey, t, messages }) => {
   const [showPopup, setShowPopup] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    resumeUrl: "",  // Change to handle URL input
+  });
   const [submitting, setSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState(null); // Success message state
   const formRef = useRef();
 
   const careerData = messages.CareerPage.Careers[careerKey];
@@ -21,22 +29,41 @@ const CareerItem = ({ careerKey, t, messages }) => {
       : value;
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
 
     try {
-      // ✅ EmailJS only — Google Sheets removed
+      // Send email using EmailJS
       await emailjs.sendForm(
-        "service_k8p595o",     // Your EmailJS service ID
-        "template_xv87lk2",    // Your EmailJS template ID
+        "service_k8p595o",        // Replace with your EmailJS service ID
+        "template_xv87lk2",       // Replace with your EmailJS template ID
         formRef.current,
-        "cadTy2BuLbxvgj38C"    // Your EmailJS public key
+        "cadTy2BuLbxvgj38C"       // Replace with your EmailJS public key
       );
 
-      alert("Application submitted successfully!");
-      setShowPopup(false);
-      formRef.current.reset(); // Clear form
+      // Show success message and auto-hide after 5 seconds
+      setSuccessMessage("Application submitted successfully!");
+      setTimeout(() => {
+        setSuccessMessage(null); // Remove success message after 5 seconds
+      }, 5000);
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+        resumeUrl: "",  // Reset the URL field
+      });
+      setShowPopup(false); // Close the form popup
     } catch (error) {
       console.error(error);
       alert("Failed to submit application.");
@@ -52,6 +79,13 @@ const CareerItem = ({ careerKey, t, messages }) => {
       <h3 className="font-semibold tracking-tight text-secondary text-3xl xs:text-[30px] sm:text-[30px] leading-[1.1] font-poppins text-center mb-6">
         {careerData.Header}
       </h3>
+
+      {/* Display Success Message */}
+      {successMessage && (
+        <div className="bg-green-500 text-white py-2 px-4 rounded-md text-center mb-6">
+          {successMessage}
+        </div>
+      )}
 
       <div className="space-y-6 text-gray-700">
         <div>
@@ -114,7 +148,8 @@ const CareerItem = ({ careerKey, t, messages }) => {
               name="from_name"
               placeholder="Name"
               required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+              onChange={handleChange}
             />
 
             <input
@@ -122,7 +157,8 @@ const CareerItem = ({ careerKey, t, messages }) => {
               name="from_email"
               placeholder="Email"
               required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+              onChange={handleChange}
             />
 
             <input
@@ -130,33 +166,37 @@ const CareerItem = ({ careerKey, t, messages }) => {
               name="from_phone"
               placeholder="Phone Number"
               required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+              onChange={handleChange}
             />
 
             <textarea
               name="from_message"
               placeholder="About Yourself"
-              className="flex h-20 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+              onChange={handleChange}
             />
 
+            {/* Replace file input with URL input */}
             <input
               type="url"
               name="resume_link"
               placeholder="Resume URL"
               required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+              onChange={handleChange}
             />
-
+            {/* Add hidden timestamp field */}
             <input
               type="hidden"
               name="timestamp"
-              value={new Date().toLocaleString()}
+              value={new Date().toLocaleString()}  // Sets the timestamp automatically
             />
 
             <button
               type="submit"
               disabled={submitting}
-              className="inline-block bg-[#0D0C22] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md w-full"
+              className="inline-block bg-[#0D0C22] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md text-white  hover:bg-blue-700 w-full"
             >
               {submitting ? "Submitting..." : "Submit Application"}
             </button>

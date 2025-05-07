@@ -20,11 +20,11 @@ const CareerItem = ({ careerKey, t, messages }) => {
   const formatWithLineBreaks = (value) => {
     return value.includes("/n")
       ? value.split("/n").map((line, i) => (
-          <React.Fragment key={i}>
-            {line.trim()}
-            <br />
-          </React.Fragment>
-        ))
+        <React.Fragment key={i}>
+          {line.trim()}
+          <br />
+        </React.Fragment>
+      ))
       : value;
   };
 
@@ -50,7 +50,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
       );
 
       // Send data to Google Sheets
-      await fetch("https://script.google.com/macros/s/AKfycbwqYlOFe9sAk0bg-8AlVzbyNzffAvwUGJvPj-1QBKE7OE2nmzx6Kk5jFs52Y3qMAgZp/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbwYfqTD9ZE_nJUYii4my-aE3LRyNcda55yg4XaYvk9YtIKI52-W3RZqocBJbagBpf0YQA/exec", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -147,46 +147,52 @@ const CareerItem = ({ careerKey, t, messages }) => {
 
             <input
               type="text"
-              name="name"
+              name="from_name"
               placeholder="Name"
               required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
               onChange={handleChange}
             />
 
             <input
               type="email"
-              name="email"
+              name="from_email"
               placeholder="Email"
               required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
               onChange={handleChange}
             />
 
             <input
               type="tel"
-              name="phone"
+              name="from_phone"
               placeholder="Phone Number"
               required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
               onChange={handleChange}
             />
 
             <textarea
-              name="message"
+              name="from_message"
               placeholder="About Yourself"
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-500 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
               onChange={handleChange}
             />
 
             {/* Replace file input with URL input */}
             <input
               type="url"
-              name="resumeUrl"
+              name="resume_link"
               placeholder="Resume URL"
               required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-500 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
               onChange={handleChange}
+            />
+            {/* Add hidden timestamp field */}
+            <input
+              type="hidden"
+              name="timestamp"
+              value={new Date().toLocaleString()}  // Sets the timestamp automatically
             />
 
             <button

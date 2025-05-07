@@ -10,7 +10,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
     email: "",
     phone: "",
     message: "",
-    resume: null,
+    resumeUrl: "",  // Change to handle URL input
   });
   const [submitting, setSubmitting] = useState(false);
   const formRef = useRef();
@@ -29,10 +29,10 @@ const CareerItem = ({ careerKey, t, messages }) => {
   };
 
   const handleChange = (e) => {
-    const { name, value, files } = e.target;
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: files ? files[0] : value,
+      [name]: value,
     }));
   };
 
@@ -60,7 +60,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
           email: formData.email,
           phone: formData.phone,
           message: formData.message,
-          resumeFileName: formData.resume ? formData.resume.name : "N/A",
+          resumeUrl: formData.resumeUrl,  // Send resume URL instead of file name
         }),
       });
 
@@ -71,7 +71,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
         email: "",
         phone: "",
         message: "",
-        resume: null,
+        resumeUrl: "",  // Reset the URL field
       });
     } catch (error) {
       console.error(error);
@@ -85,7 +85,6 @@ const CareerItem = ({ careerKey, t, messages }) => {
 
   return (
     <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition duration-300 border border-gray-200">
-  
       <h3 className="font-semibold tracking-tight text-secondary text-3xl xs:text-[30px] sm:text-[30px] leading-[1.1] font-poppins text-center mb-6">
         {careerData.Header}
       </h3>
@@ -111,8 +110,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
 
         <div>
           <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Bonus / Preferred Skills</h4>
-          <ul className=" text-gray-800 pb-5 text-lg xs:text-lg md:text-base
-             list-disc pl-5 space-y-1">
+          <ul className=" text-gray-800 pb-5 text-lg xs:text-lg md:text-base list-disc pl-5 space-y-1">
             {careerData.BonusSkills.map((item, index) => (
               <li key={index}>{formatWithLineBreaks(item)}</li>
             ))}
@@ -181,12 +179,13 @@ const CareerItem = ({ careerKey, t, messages }) => {
               onChange={handleChange}
             />
 
+            {/* Replace file input with URL input */}
             <input
-              type="file"
-              name="resume"
-              accept=".pdf,.doc,.docx"
+              type="url"
+              name="resumeUrl"
+              placeholder="Resume URL"
               required
-              className="w-full"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
               onChange={handleChange}
             />
 

@@ -10,10 +10,11 @@ const CareerItem = ({ careerKey, t, messages }) => {
     email: "",
     phone: "",
     message: "",
-    resumeUrl: "",  // Change to handle URL input
+    resumeUrl: "",  // Handle URL input for resume
   });
   const [submitting, setSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState(null); // Success message state
+  const [errorMessage, setErrorMessage] = useState(null); // Error message state
   const formRef = useRef();
 
   const careerData = messages.CareerPage.Careers[careerKey];
@@ -40,6 +41,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
+    setErrorMessage(null); // Reset error message before submitting
 
     try {
       // Send email using EmailJS
@@ -55,7 +57,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
       setTimeout(() => {
         setSuccessMessage(null); // Remove success message after 30 seconds
         setShowPopup(false);  // Close the popup after success message disappears
-      }, 30000); // 30 seconds (30,000 milliseconds)
+      }, 30000); // 30 seconds
 
       setFormData({
         name: "",
@@ -66,10 +68,14 @@ const CareerItem = ({ careerKey, t, messages }) => {
       });
     } catch (error) {
       console.error(error);
-      alert("Failed to submit application.");
+      setErrorMessage("Failed to submit application. Please try again.");
     } finally {
       setSubmitting(false);
     }
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
   };
 
   if (!careerData) return null;
@@ -120,20 +126,16 @@ const CareerItem = ({ careerKey, t, messages }) => {
 
       {/* Popup Form */}
       {showPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+          onClick={handleClosePopup} // Close the popup if clicked outside
+        >
           <form
             ref={formRef}
             onSubmit={handleSubmit}
             className="bg-white rounded-lg p-6 w-full max-w-lg space-y-4 relative"
+            onClick={(e) => e.stopPropagation()} // Prevent form from closing when clicking inside the form
           >
-            <button
-              type="button"
-              onClick={() => setShowPopup(false)}
-              className="absolute top-2 right-2 text-gray-600 hover:text-black"
-            >
-              ✕
-            </button>
-
             {successMessage ? (
               // Show the success message inside the popup
               <div className="bg-green-500 text-white py-4 px-8 rounded-md text-center mb-6">
@@ -142,6 +144,12 @@ const CareerItem = ({ careerKey, t, messages }) => {
             ) : (
               <>
                 <h2 className="text-center text-3xl text-secondary font-bold">Apply for Position</h2>
+
+                {errorMessage && (
+                  <div className="bg-red-500 text-white py-4 px-8 rounded-md text-center mb-6">
+                    {errorMessage}
+                  </div>
+                )}
 
                 <input
                   type="text"

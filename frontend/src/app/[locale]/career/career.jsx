@@ -200,6 +200,11 @@ const CareerItem = ({ careerKey, t, messages }) => {
                   name="timestamp"
                   value={new Date().toLocaleString()}  // Sets the timestamp automatically
                 />
+                <input
+                  type="hidden"
+                  name="from_name"
+                  value={`Job Application - ${careerData.Header}`}
+                />
 
                 <button
                   type="submit"

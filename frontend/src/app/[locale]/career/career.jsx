@@ -50,11 +50,11 @@ const CareerItem = ({ careerKey, t, messages }) => {
         "cadTy2BuLbxvgj38C"       // Replace with your EmailJS public key
       );
 
-      // Show success message and auto-hide after 5 seconds
+      // Show success message and auto-hide after 30 seconds
       setSuccessMessage("Application submitted successfully!");
       setTimeout(() => {
-        setSuccessMessage(null); // Remove success message after 5 seconds
-      }, 5000);
+        setSuccessMessage(null); // Remove success message after 30 seconds
+      }, 30000); // 30 seconds (30,000 milliseconds)
 
       setFormData({
         name: "",

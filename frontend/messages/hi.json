@@ -1,36 +1,16 @@
 {
   "Header": {
     "navLinks": {
-      "Home": {
-        "id": "1",
-        "label": "होम",
-        "href": "/"
-      },
-      "About": {
-        "id": "2",
-        "label": "हमारे बारे में",
-        "href": "/about-us"
-      },
-      "Products": {
-        "id": "3",
-        "label": "उत्पाद",
-        "subMenu": true
-      },
+      "Home": { "id": "1", "label": "होम", "href": "/" },
+      "About": { "id": "2", "label": "हमारे बारे में", "href": "/about-us" },
+      "Products": { "id": "3", "label": "उत्पाद", "subMenu": true },
       "Career": {
         "id": "4",
         "label": "करियर",
         "href": "/career"
       },
-      "Blog": {
-        "id": "5",
-        "label": "ब्लॉग",
-        "href": "/blog"
-      },
-      "Contact": {
-        "id": "6",
-        "label": "संपर्क करें",
-        "href": "/contact-us"
-      }
+      "Blog": { "id": "5", "label": "ब्लॉग", "href": "/blog" },
+      "Contact": { "id": "6", "label": "संपर्क करें", "href": "/contact-us" }
     },
     "subNavLinks": {
       "RotaryWings": {
@@ -82,6 +62,7 @@
     },
     "getInTouch": "संपर्क करें",
     "chooseLanguage": "भाषा चुनें"
+    
   },
   "LocaleSwitcher": {
     "label": "भाषा बदलें",
@@ -147,6 +128,7 @@
     "title": "मावियोम एविएशन के साथ भविष्य का नेविगेशन करें",
     "description": "आज ही हमसे जुड़ें और अपने ड्रोन अनुभव को क्रांतिकारी बनाने के लिए व्यापक जानकारी और विशेषज्ञ मार्गदर्शन प्राप्त करें।"
   },
+
   "AboutPage": {
     "about_company": {
       "section_title": "कंपनी के बारे में",
@@ -306,6 +288,7 @@
       }
     }
   },
+
   "ContactPage": {
     "ContactHeader": {
       "Heading": "हमसे संपर्क करें"
@@ -362,31 +345,26 @@
       "ToastMessage": "संदेश सफलतापूर्वक भेजा गया!"
     }
   },
+
   "Footer": {
     "description": "आसमान का अन्वेषण करें: हमारे अत्याधुनिक ड्रोन के साथ अपनी अनुभव को ऊंचा उठाएं - जहां प्रौद्योगिकी को पंख मिलते हैं!",
     "footerLinks": {
       "products": {
-        "title": "उत्पाद"
-      }
-    },
-    "quickLinks": {
-      "title": "त्वरित लिंक",
-      "links": {
-        "aboutUs": {
-          "label": "मवियोम के बारे में",
-          "href": "/about-us"
-        },
-        "contactUs": {
-          "label": "संपर्क करें",
-          "href": "/contact-us"
-        },
-        "blog": {
-          "label": "ब्लॉग",
-          "href": "/blog"
-        },
-        "Career": {
-          "label": "करियर",
-          "href": "/career"
+        "title": "उत्पाद",
+        "links": {
+          "uavs": { "label": "यूएवी", "href": "/products" }
+        }
+      },
+      "quickLinks": {
+        "title": "त्वरित लिंक",
+        "links": {
+          "aboutUs": { "label": "मवियोम के बारे में", "href": "/about-us" },
+          "contactUs": { "label": "संपर्क करें", "href": "/contact-us" },
+          "blog": { "label": "ब्लॉग", "href": "/blog" },
+          "Career": {
+            "label": "करियर",
+            "href": "/career"
+          }
         }
       }
     },
@@ -397,10 +375,7 @@
           "label": "कार्यालय संपर्क",
           "value": "(+91) 011-4563-5630"
         },
-        "emailAddress": {
-          "label": "ईमेल पता",
-          "value": "info@maviyom.com"
-        },
+        "emailAddress": { "label": "ईमेल पता", "value": "info@maviyom.com" },
         "visitOffice": {
           "label": "कार्यालय जाएं",
           "value": "214, सेकंड फ्लोर, कॉम्पिटेंट हाउस, एफ-ब्लॉक, मिडिल सर्कल, कनॉट प्लेस, नई दिल्ली - 110001"

@@ -54,6 +54,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
       setSuccessMessage("Application submitted successfully!");
       setTimeout(() => {
         setSuccessMessage(null); // Remove success message after 30 seconds
+        setShowPopup(false);  // Close the popup after success message disappears
       }, 30000); // 30 seconds (30,000 milliseconds)
 
       setFormData({
@@ -63,7 +64,6 @@ const CareerItem = ({ careerKey, t, messages }) => {
         message: "",
         resumeUrl: "",  // Reset the URL field
       });
-      setShowPopup(false); // Close the form popup
     } catch (error) {
       console.error(error);
       alert("Failed to submit application.");
@@ -79,13 +79,6 @@ const CareerItem = ({ careerKey, t, messages }) => {
       <h3 className="font-semibold tracking-tight text-secondary text-3xl xs:text-[30px] sm:text-[30px] leading-[1.1] font-poppins text-center mb-6">
         {careerData.Header}
       </h3>
-
-      {/* Display Success Message */}
-      {successMessage && (
-        <div className="bg-green-500 text-white py-2 px-4 rounded-md text-center mb-6">
-          {successMessage}
-        </div>
-      )}
 
       <div className="space-y-6 text-gray-700">
         <div>
@@ -141,65 +134,74 @@ const CareerItem = ({ careerKey, t, messages }) => {
               ✕
             </button>
 
-            <h2 className="text-center text-3xl text-secondary font-bold">Apply for Position</h2>
+            {successMessage ? (
+              // Show the success message inside the popup
+              <div className="bg-green-500 text-white py-4 px-8 rounded-md text-center mb-6">
+                {successMessage}
+              </div>
+            ) : (
+              <>
+                <h2 className="text-center text-3xl text-secondary font-bold">Apply for Position</h2>
 
-            <input
-              type="text"
-              name="from_name"
-              placeholder="Name"
-              required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-              onChange={handleChange}
-            />
+                <input
+                  type="text"
+                  name="from_name"
+                  placeholder="Name"
+                  required
+                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  onChange={handleChange}
+                />
 
-            <input
-              type="email"
-              name="from_email"
-              placeholder="Email"
-              required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-              onChange={handleChange}
-            />
+                <input
+                  type="email"
+                  name="from_email"
+                  placeholder="Email"
+                  required
+                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  onChange={handleChange}
+                />
 
-            <input
-              type="tel"
-              name="from_phone"
-              placeholder="Phone Number"
-              required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-              onChange={handleChange}
-            />
+                <input
+                  type="tel"
+                  name="from_phone"
+                  placeholder="Phone Number"
+                  required
+                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  onChange={handleChange}
+                />
 
-            <textarea
-              name="from_message"
-              placeholder="About Yourself"
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-              onChange={handleChange}
-            />
+                <textarea
+                  name="from_message"
+                  placeholder="About Yourself"
+                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  onChange={handleChange}
+                />
 
-            {/* Replace file input with URL input */}
-            <input
-              type="url"
-              name="resume_link"
-              placeholder="Resume URL"
-              required
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-              onChange={handleChange}
-            />
-            {/* Add hidden timestamp field */}
-            <input
-              type="hidden"
-              name="timestamp"
-              value={new Date().toLocaleString()}  // Sets the timestamp automatically
-            />
+                {/* Replace file input with URL input */}
+                <input
+                  type="url"
+                  name="resume_link"
+                  placeholder="Resume URL"
+                  required
+                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  onChange={handleChange}
+                />
+                {/* Add hidden timestamp field */}
+                <input
+                  type="hidden"
+                  name="timestamp"
+                  value={new Date().toLocaleString()}  // Sets the timestamp automatically
+                />
 
-            <button
-              type="submit"
-              disabled={submitting}
-              className="inline-block bg-[#0D0C22] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md text-white  hover:bg-blue-700 w-full"
-            >
-              {submitting ? "Submitting..." : "Submit Application"}
-            </button>
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="inline-block bg-[#0D0C22] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md text-white  hover:bg-blue-700 w-full"
+                >
+                  {submitting ? "Submitting..." : "Submit Application"}
+                </button>
+              </>
+            )}
           </form>
         </div>
       )}

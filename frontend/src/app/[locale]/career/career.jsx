@@ -133,7 +133,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="bg-white rounded-lg p-6 w-full max-w-lg space-y-4 relative"
+            className="bg-white rounded-xl p-4 sm:p-6 md:p-8 w-[95%] sm:w-full max-w-lg space-y-4 relative overflow-y-auto max-h-[90vh]"
             onClick={(e) => e.stopPropagation()} // Prevent form from closing when clicking inside the form
           >
             {successMessage ? (

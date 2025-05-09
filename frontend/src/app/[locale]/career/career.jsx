@@ -179,13 +179,17 @@ const CareerItem = ({ careerKey, t, messages }) => {
                 />
 
                 <textarea
-                  name="from_message"
-                  placeholder="About Yourself"
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                  onChange={handleChange}
-                   maxLength={500} // Enforce a character limit
+  name="from_message"
+  placeholder="About Yourself"
+  className="flex w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+  onChange={handleChange}
+  maxLength={500} // Enforce a character limit
   value={formData.from_message} // Ensure the state value is reflected
-                />
+/>
+<p className="text-sm text-gray-500 text-right">
+  {formData.from_message.length}/500 characters
+</p>
+
 
                 {/* Replace file input with URL input */}
                 <input

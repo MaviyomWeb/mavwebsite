@@ -183,6 +183,8 @@ const CareerItem = ({ careerKey, t, messages }) => {
                   placeholder="About Yourself"
                   className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   onChange={handleChange}
+                   maxLength={500} // Enforce a character limit
+  value={formData.from_message} // Ensure the state value is reflected
                 />
 
                 {/* Replace file input with URL input */}

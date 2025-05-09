@@ -131,11 +131,11 @@ const CareerItem = ({ careerKey, t, messages }) => {
           onClick={handleClosePopup} // Close the popup if clicked outside
         >
           <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="bg-white rounded-lg p-6 w-full max-w-lg space-y-4 relative"
-            onClick={(e) => e.stopPropagation()} // Prevent form from closing when clicking inside the form
-          >
+  ref={formRef}
+  onSubmit={handleSubmit}
+  className="bg-white rounded-xl p-4 sm:p-6 md:p-8 w-[95%] sm:w-full max-w-lg space-y-4 relative overflow-y-auto max-h-[90vh]"
+  onClick={(e) => e.stopPropagation()}
+/>
             {successMessage ? (
               // Show the success message inside the popup
               <div className="bg-green-500 text-white py-4 px-8 rounded-md text-center mb-6">

@@ -180,8 +180,9 @@ const CareerItem = ({ careerKey, t, messages }) => {
 
                 <textarea
                   name="from_message"
-                  placeholder="About Yourself"
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  placeholder="About Yourself (max 500 characters)"
+                  maxLength={500}
+                  className="h-24 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
                   onChange={handleChange}
                 />
 

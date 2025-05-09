@@ -133,7 +133,7 @@ const CareerItem = ({ careerKey, t, messages }) => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="bg-white rounded-xl p-4 sm:p-6 md:p-8 w-[95%] sm:w-full max-w-lg space-y-4 relative overflow-y-auto max-h-[90vh]"
+            className="bg-white rounded-lg p-6 w-full max-w-lg space-y-4 relative"
             onClick={(e) => e.stopPropagation()} // Prevent form from closing when clicking inside the form
           >
             {successMessage ? (
@@ -178,18 +178,12 @@ const CareerItem = ({ careerKey, t, messages }) => {
                   onChange={handleChange}
                 />
 
-               <textarea
-  name="from_message"
-  placeholder="About Yourself"
-  maxLength={500} // limit to 500 characters
-  value={formData.message}
-  onChange={handleChange}
-  className="resize-none h-24 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-/>
-<p className="text-sm text-gray-500 text-right">
-  {formData.message.length}/500 characters
-</p>
-
+                <textarea
+                  name="from_message"
+                  placeholder="About Yourself"
+                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  onChange={handleChange}
+                />
 
                 {/* Replace file input with URL input */}
                 <input

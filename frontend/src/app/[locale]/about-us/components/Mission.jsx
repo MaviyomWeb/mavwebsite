@@ -25,7 +25,7 @@ after:w-[40px] after:rounded-3xl after:bg-primary after:content-[''] "
           <img
             src="/mission-img.webp"
             alt=""
-            className="w-full h-64 sm:h-96   xl:h-full object-cover "
+            className="w-full h-[50vh] object-cover "
           />
         </div>
         <div className="grid md:grid-cols-2 gap-5 lg:gap-8 max-md:max-w-lg mx-auto">

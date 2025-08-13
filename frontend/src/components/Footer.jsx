@@ -34,7 +34,7 @@ const Footer = () => {
     <>
       <footer className="relative w-full h-auto  bg-gray-900 pt-5 md:pt-10 ">
         <Container>
-          <div className="footer-top w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-footer-lg gap-5 lg:gap-10 xl:gap-16  ">
+          <div className="footer-top w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[25%_25%_20%_30%]  ">
             <FooterColumn>
               <Link href="/" className="mb-10">
                 <Image src="/logo.png" alt="logo" width={194} height={164} />

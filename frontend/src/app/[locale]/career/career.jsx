@@ -3,18 +3,21 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const CareerItem = ({ careerKey, t, messages }) => {
+// const CareerItem = ({ careerKey, t, messages }) => {
+  const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
+
+  // const [isOpen, setIsOpen] = useState(false); 
   const [showPopup, setShowPopup] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
-    resumeUrl: "",  // Handle URL input for resume
+    resumeUrl: "",
   });
   const [submitting, setSubmitting] = useState(false);
-  const [successMessage, setSuccessMessage] = useState(null); // Success message state
-  const [errorMessage, setErrorMessage] = useState(null); // Error message state
+  const [successMessage, setSuccessMessage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
   const formRef = useRef();
 
   const careerData = messages.CareerPage.Careers[careerKey];
@@ -22,11 +25,11 @@ const CareerItem = ({ careerKey, t, messages }) => {
   const formatWithLineBreaks = (value) => {
     return value.includes("/n")
       ? value.split("/n").map((line, i) => (
-        <React.Fragment key={i}>
-          {line.trim()}
-          <br />
-        </React.Fragment>
-      ))
+          <React.Fragment key={i}>
+            {line.trim()}
+            <br />
+          </React.Fragment>
+        ))
       : value;
   };
 
@@ -41,30 +44,28 @@ const CareerItem = ({ careerKey, t, messages }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-    setErrorMessage(null); // Reset error message before submitting
+    setErrorMessage(null);
 
     try {
-      // Send email using EmailJS
       await emailjs.sendForm(
-        "service_k8p595o",        // Replace with your EmailJS service ID
-        "template_xv87lk2",       // Replace with your EmailJS template ID
+        "service_k8p595o",
+        "template_xv87lk2",
         formRef.current,
-        "cadTy2BuLbxvgj38C"       // Replace with your EmailJS public key
+        "cadTy2BuLbxvgj38C"
       );
 
-      // Show success message and auto-hide after 30 seconds
       setSuccessMessage("Application submitted successfully!");
       setTimeout(() => {
-        setSuccessMessage(null); // Remove success message after 30 seconds
-        setShowPopup(false);  // Close the popup after success message disappears
-      }, 30000); // 30 seconds
+        setSuccessMessage(null);
+        setShowPopup(false);
+      }, 30000);
 
       setFormData({
         name: "",
         email: "",
         phone: "",
         message: "",
-        resumeUrl: "",  // Reset the URL field
+        resumeUrl: "",
       });
     } catch (error) {
       console.error(error);
@@ -81,63 +82,72 @@ const CareerItem = ({ careerKey, t, messages }) => {
   if (!careerData) return null;
 
   return (
-    <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition duration-300 border border-gray-200">
-      <h3 className="font-semibold tracking-tight text-secondary text-3xl xs:text-[30px] sm:text-[30px] leading-[1.1] font-poppins text-center mb-6">
-        {careerData.Header}
-      </h3>
+    <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border border-gray-200">
+      {/* Accordion Header */}
+      <button
+        // onClick={() => setIsOpen(!isOpen)}
+        onClick={onToggle}
+        className="w-full text-left px-8 py-6  transition text-xl font-semibold text-[#0D0C22] flex justify-between items-center ${
+    isOpen ? 'bg-white' : 'bg-gray-100 hover:bg-gray-200'"
+      >
+        <span>{careerData.Header}</span>
+        <span>{isOpen ? "−" : "+"}</span>
+      </button>
 
-      <div className="space-y-6 text-gray-700">
-        <div>
-          <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Key Responsibilities</h4>
-          <ul className="list-disc pl-5 space-y-1">
-            {careerData.Responsibilities.map((item, index) => (
-              <li key={index}>{formatWithLineBreaks(item)}</li>
-            ))}
-          </ul>
+      {/* Accordion Content */}
+      {isOpen && (
+        <div className="p-8 space-y-6 text-gray-700">
+          <div>
+            <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Key Responsibilities</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              {careerData.Responsibilities.map((item, index) => (
+                <li key={index}>{formatWithLineBreaks(item)}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Qualifications</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              {careerData.Qualifications.map((item, index) => (
+                <li key={index}>{formatWithLineBreaks(item)}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Bonus / Preferred Skills</h4>
+            <ul className="text-gray-800 pb-5 text-lg xs:text-lg md:text-base list-disc pl-5 space-y-1">
+              {careerData.BonusSkills.map((item, index) => (
+                <li key={index}>{formatWithLineBreaks(item)}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mt-8 text-center">
+            <button
+              onClick={() => setShowPopup(true)}
+              className="inline-block bg-[#0D0C22] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md"
+            >
+              Apply Now
+            </button>
+          </div>
         </div>
-
-        <div>
-          <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Qualifications</h4>
-          <ul className="list-disc pl-5 space-y-1">
-            {careerData.Qualifications.map((item, index) => (
-              <li key={index}>{formatWithLineBreaks(item)}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Bonus / Preferred Skills</h4>
-          <ul className=" text-gray-800 pb-5 text-lg xs:text-lg md:text-base list-disc pl-5 space-y-1">
-            {careerData.BonusSkills.map((item, index) => (
-              <li key={index}>{formatWithLineBreaks(item)}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div className="mt-8 text-center ">
-        <button
-          onClick={() => setShowPopup(true)}
-          className="inline-block bg-[#0D0C22] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200 shadow-md"
-        >
-          Apply Now
-        </button>
-      </div>
+      )}
 
       {/* Popup Form */}
       {showPopup && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-          onClick={handleClosePopup} // Close the popup if clicked outside
+          onClick={handleClosePopup}
         >
           <form
             ref={formRef}
             onSubmit={handleSubmit}
             className="bg-white rounded-xl p-4 sm:p-6 md:p-8 w-[95%] sm:w-full max-w-lg space-y-4 relative overflow-y-auto max-h-[90vh]"
-            onClick={(e) => e.stopPropagation()} // Prevent form from closing when clicking inside the form
+            onClick={(e) => e.stopPropagation()}
           >
             {successMessage ? (
-              // Show the success message inside the popup
               <div className="bg-green-500 text-white py-4 px-8 rounded-md text-center mb-6">
                 {successMessage}
               </div>
@@ -159,7 +169,6 @@ const CareerItem = ({ careerKey, t, messages }) => {
                   className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   onChange={handleChange}
                 />
-
                 <input
                   type="email"
                   name="from_email"
@@ -168,7 +177,6 @@ const CareerItem = ({ careerKey, t, messages }) => {
                   className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   onChange={handleChange}
                 />
-
                 <input
                   type="tel"
                   name="from_phone"
@@ -177,7 +185,6 @@ const CareerItem = ({ careerKey, t, messages }) => {
                   className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   onChange={handleChange}
                 />
-
                 <textarea
                   name="from_message"
                   placeholder="About Yourself (max 500 characters)"
@@ -185,8 +192,6 @@ const CareerItem = ({ careerKey, t, messages }) => {
                   className="h-24 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
                   onChange={handleChange}
                 />
-
-                {/* Replace file input with URL input */}
                 <input
                   type="url"
                   name="resume_link"
@@ -195,19 +200,16 @@ const CareerItem = ({ careerKey, t, messages }) => {
                   className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   onChange={handleChange}
                 />
-                {/* Add hidden timestamp field */}
                 <input
                   type="hidden"
                   name="timestamp"
-                  value={new Date().toLocaleString()}  // Sets the timestamp automatically
+                  value={new Date().toLocaleString()}
                 />
                 <input
-  type="hidden"
-  name="position"
-  value={`Job Application - ${careerData.Header}`}
-/>
-
-
+                  type="hidden"
+                  name="position"
+                  value={`Job Application - ${careerData.Header}`}
+                />
                 <button
                   type="submit"
                   disabled={submitting}

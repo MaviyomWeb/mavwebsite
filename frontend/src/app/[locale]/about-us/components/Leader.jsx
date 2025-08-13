@@ -2,11 +2,11 @@
   import React from "react";
   import Image from "next/image";
 
-  const OurTeam = () => {
-    const t = useTranslations("AboutPage.team_section");
+  const Leader = () => {
+    const t = useTranslations("AboutPage.leader_section");
     const message = useMessages();
 
-    const teamMembers = Object.keys(message.AboutPage.team_section.members);
+    const teamMembers = Object.keys(message.AboutPage.leader_section.members);
     return (
       <>
         <div className=" mb-10">
@@ -25,11 +25,11 @@
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4  ">
           {teamMembers.map((member) => {
-            const data = message.AboutPage.team_section.members[member];
+            const data = message.AboutPage.leader_section.members[member];
             return (
               <div
                 key={member}
-                className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 rounded-lg shadow-lg"
+                className="bg-white shadow-md rounded-lg overflow-hidden  transition-shadow duration-300 rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.15)]"
               >
                 {/* Image */}
                 <div className="p-10"> {/* 20px padding */}
@@ -63,4 +63,4 @@
     );
   };
 
-  export default OurTeam;
+  export default Leader;

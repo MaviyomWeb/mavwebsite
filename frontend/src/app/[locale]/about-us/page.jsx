@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import AboutHero from "./components/AboutHero";
 import Mission from "./components/Mission";
-import OurTeam from "./components/OurTeam";
+import OurTeam from "./components/Team";
 import Vision from "./components/Vision";
 
 const About = () => {

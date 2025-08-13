@@ -7,7 +7,7 @@ const ContactHeader = () => {
 
   return (
     <section className="Contact Us hero-banner ">
-      <div className="relative h-[200px] md:h-[350px]">
+      <div className="relative h-[200px] md:h-[200px]">
         <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
           <Image
             src="/Contact-bg.webp"

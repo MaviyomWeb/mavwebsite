@@ -2,11 +2,11 @@
   import React from "react";
   import Image from "next/image";
 
-  const OurTeam = () => {
-    const t = useTranslations("AboutPage.team_section");
+  const Advisor = () => {
+    const t = useTranslations("AboutPage.advisor_section");
     const message = useMessages();
 
-    const teamMembers = Object.keys(message.AboutPage.team_section.members);
+    const teamMembers = Object.keys(message.AboutPage.advisor_section.members);
     return (
       <>
         <div className=" mb-10">
@@ -23,34 +23,22 @@
           </div>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4  ">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3  ">
           {teamMembers.map((member) => {
-            const data = message.AboutPage.team_section.members[member];
+            const data = message.AboutPage.advisor_section.members[member];
             return (
               <div
                 key={member}
-                className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 rounded-lg shadow-lg"
+                className="bg-white shadow-md rounded-lg overflow-hidden  transition-shadow duration-300 rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.15)]"
               >
-                {/* Image */}
-                <div className="p-10"> {/* 20px padding */}
-                  <div className="relative w-full h-64 ">
-                    <Image
-                      src={data.imageSrc}
-                      alt={data.name}
-                      fill
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                </div>
-
-                {/* Info */}
+                
                 <div className="p-5 text-center">
                   <h3 className="text-lg font-semibold text-gray-800">
                     {data.name}
                   </h3>
-                  <p className="text-sm text-blue-500 font-medium">
+                  {/* <p className="text-sm text-blue-500 font-medium">
                     {data.role}
-                  </p>
+                  </p> */}
                   <p className="mt-3 text-gray-600 text-sm leading-relaxed">
                     {data.description}
                   </p>
@@ -63,4 +51,4 @@
     );
   };
 
-  export default OurTeam;
+  export default Advisor;

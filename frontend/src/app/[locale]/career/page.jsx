@@ -10,11 +10,13 @@ const Career = () => {
   const t = useTranslations("CareerPage");
   const messages = useMessages();
   const careerKeys = Object.keys(messages.CareerPage.Careers);
+  const [openIndex, setOpenIndex] = React.useState(null); // controls which job is open
+
 
   return (
     <div className="relative w-full bg-gray-50">
       {/* Hero Section */}
-      <section className="relative h-72 md:h-[400px] overflow-hidden">
+      <section className="relative h-72 md:h-[200px] overflow-hidden">
         <Image
           src="/payload-hero-banner.webp"
           alt="Career"
@@ -33,14 +35,18 @@ const Career = () => {
       <section className="py-16">
         <Container>
           <div className="flex flex-col items-center gap-12">
-            {careerKeys.map((careerKey) => (
-              <CareerItem
-                key={careerKey}
-                careerKey={careerKey}
-                t={t}
-                messages={messages}
-              />
-            ))}
+            {careerKeys.map((careerKey, index) => (
+  <CareerItem
+    key={careerKey}
+    careerKey={careerKey}
+    t={t}
+    messages={messages}
+    isOpen={openIndex === index}             // only one open at a time
+    onToggle={() =>
+      setOpenIndex(openIndex === index ? null : index)
+    }
+  />
+))}
           </div>
         </Container>
       </section>

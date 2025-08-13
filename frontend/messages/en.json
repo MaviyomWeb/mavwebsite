@@ -9,7 +9,7 @@
       "About": {
         "id": "2",
         "label": "About",
-        "href": "/about-us"
+        "subMenu": true
       },
       "Products": {
         "id": "3",
@@ -78,6 +78,20 @@
             "image": "/VTOL-3900H.webp"
           }
         }
+      }
+    },
+    "aboutSubLinks": {
+      "Company": {
+        "label": "Company Overview",
+        "href": "/about-us/company"
+      },
+      "Team": {
+        "label": "Meet the Team",
+        "href": "/about-us/team"
+      },
+      "Our Vison and Mission": {
+        "label": "Our Vison and Mission",
+        "href": "/about-us/visionandmission"
       }
     },
     "getInTouch": "Get in Touch",
@@ -205,33 +219,123 @@
       "title": "Our Vision",
       "description": "To engineer and deliver state-of-the-art unmanned systems for defence and civilian sectors worldwide, while continually expanding our manufacturing and R&D capabilities to meet the evolving needs that shape the future of security, logistics, and intelligence."
     },
-    "team_section": {
-      "title": "Our Dedicated Team",
+    "founder_section": {
+      "title": "Founders",
       "members": {
-        "chairman": {
-          "role": "Chairman of the Board",
-          "name": "Manmohan Aggarwal",
-          "description": "With over 27 years of experience across global markets, Mr. Manmohan Aggarwal, our Chairman, is known for his market intuition and exceptional ability to transform trends into business victories. His leadership is a cornerstone, setting our course towards remarkable achievements.",
-          "imageSrc": "/manmohan-aggarwal.webp"
-        },
-        "ceo": {
-          "role": "CEO",
-          "name": "Mridul Aggarwal",
-          "description": "Mridul Aggarwal, our CEO, combines youthful energy with deep expertise in mechanical and aerospace engineering, steering Maviyom with sharp business insights and a passion for innovation that challenges the frontiers of the drone industry.",
-          "imageSrc": "/mridul-aggarwal.webp"
+        "cto": {
+          "name": "AKSHAY VERMA",
+          "description": "AI Specialist with experience in leading AI integration and software development for UAV systems, and former AI Engineer at a leading Indian computer vision startup.",
+          "imageSrc": "/akshay-verma.jpg"
         },
         "coo": {
-          "role": "COO",
-          "name": "Brijesh Sharma",
-          "description": "Brijesh Sharma, our COO, is a virtuoso of technology whose masterful understanding of aerospace engineering and production propels our operational excellence. His strategic and technological expertise ensures Maviyom's operations remain efficient and on the cutting edge.",
-          "imageSrc": "/brijesh-sharma.webp"
+          "name": "BRIJESH SHARMA",
+          "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and operational expert skilled in streamlining manufacturing processes and ensuring top-quality standards.",
+          "imageSrc": "/brijesh-sharma.jpg"
         },
-        "cto": {
-          "role": "CTO",
-          "name": "Akshay Verma",
-          "description": "Akshay Verma, our CTO, is at the helm of our technological strategy, integrating AI and software development with an ethical approach that guides Maviyom's responsible yet pioneering advancements in UAV technology.",
-          "imageSrc": "/akshay-verma.webp"
+        "ceo": {
+          "name": "MRIDUL AGGARWAL",
+          "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) with expertise in blending technical skills and business insight to lead innovation and drive sustainable growth.",
+          "imageSrc": "/mridul-aggarwal.jpg"
+        },
+        "cro": {
+          "name": "SHAURYA SINGH RAWAT",
+          "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and research lead specializing in advanced aerodynamics and aerospace AI innovation.",
+          "imageSrc": "/shaurya.jpg"
         }
+        
+      }
+    },
+    "director_section": {
+      "title": "Directors",
+      "members": {
+        "cto": {
+          "name": "AKSHAY VERMA",
+          "description": "AI Specialist with experience in leading AI integration and software development for UAV systems, and former AI Engineer at a leading Indian computer vision startup.",
+          "imageSrc": "/akshay-verma.jpg"
+        },
+        "director": {
+          "name": "JYOTSANA ARYA",
+          "description": "Over 25 years of expertise in manufacturing, driving efficiency, quality, and innovation across diverse industrial operations.",
+          "imageSrc": "/jyotisana-aray.jpg"
+        },
+        "chairman": {
+          "name": "MANMOHAN AGGARWAL",
+          "description": "Mr. Aggarwal brings 27+ years of strategic leadership and market expertise across industries. His vision and network drive Maviyom’s growth and scale.",
+          "imageSrc": "/manmohan-aggarwal.jpg"
+        },
+        "ceo": {
+          "name": "MRIDUL AGGARWAL",
+          "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) with expertise in blending technical skills and business insight to lead innovation and drive sustainable growth.",
+          "imageSrc": "/mridul-aggarwal.jpg"
+        }
+        
+      }
+    },
+    "advisor_section": {
+      "title": "Advisors",
+      "members": {
+        "advisor1": {
+          "name": "BHAGWAN GORTI",
+          "description": "Business Softech Advisor"
+        },
+        "advisor2": {
+          "name": "JITEN SHAH",
+          "description": "Director, World Bank Advisor (Mozambique Operations)"
+        },
+        "advisor3": {
+          "name": "LT. CMDR. ASHUTOSH MOHANTEY (RETD.)",
+          "description": "Business Development Advisor"
+        },
+         "advisor4": {
+          "name": "M. S. CHAUHAN",
+          "description": "Business Development Advisor"
+        },
+        "advisor5": {
+          "name": "PARUL AGARWAL",
+          "description": "Chartered Accountant with 25+ years’ experience driving financial strategy, compliance, and investments for sustainable growth."
+        },
+        "advisor6": {
+          "name": "RADHEY SHYAM VERMA",
+          "description": "Board Advisor-Head of Finance, SOS Angola"
+        }
+      
+        
+      }
+    },
+    "leader_section": {
+      "title": "Leaders",
+      "members": {
+        "cto": {
+          "name": "AKSHAY VERMA",
+          "role": "CTO",
+          "description": "AI Specialist with experience in leading AI integration and software development for UAV systems, and former AI Engineer at a leading Indian computer vision startup.",
+          "imageSrc": "/akshay-verma.jpg"
+        },
+        "coo": {
+          "name": "BRIJESH SHARMA",
+          "role": "COO",
+          "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and operational expert skilled in streamlining manufacturing processes and ensuring top-quality standards.",
+          "imageSrc": "/brijesh-sharma.jpg"
+        },
+        "ceo": {
+          "name": "MRIDUL AGGARWAL",
+          "role": "CEO",
+          "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) with expertise in blending technical skills and business insight to lead innovation and drive sustainable growth.",
+          "imageSrc": "/mridul-aggarwal.jpg"
+        },
+        "director": {
+          "name": "PARUL AGARWAL",
+          "role": "CFO",
+          "description": "Chartered Accountant with 25+ years’ experience driving financial strategy, compliance, and investments for sustainable growth.",
+          "imageSrc": "/parul-aggarwal.jpg"
+        },
+        "cro": {
+          "name": "SHAURYA SINGH RAWAT",
+          "role": "CDO",
+          "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and research lead specializing in advanced aerodynamics and aerospace AI innovation.",
+          "imageSrc": "/shaurya.jpg"
+        }
+        
       }
     }
   },
@@ -368,9 +472,29 @@
       "products": {
         "title": "Products",
         "links": {
-          "uavs": {
-            "label": "UAVs",
-            "href": "/products"
+          "Maviyom X4": {
+            "label": "Maviyom X4",
+            "href": "/product/maviyom-x4"
+          },
+          "Maviyom T-100 Tethered Drone": {
+            "label": "Maviyom T-100 Tethered Drone",
+            "href": "/product/maviyom-t-100-tethered-drone"
+          },
+          "Maviyom X8": {
+            "label": "Maviyom X8",
+            "href": "/product/maviyom-x8"
+          },
+          "Maviyom VTOL 2500-E": {
+            "label": "Maviyom VTOL 2500-E",
+            "href": "/product/maviyom-vtol-2500-e-1"
+          },
+          "Maviyom VTOL 3800-H": {
+            "label": "Maviyom VTOL 3800-H",
+            "href": "/product/maviyom-vtol-3800-h"
+          },
+          "Maviyom VTOL 3900-H": {
+            "label": "Maviyom VTOL 3900-H",
+            "href": "/product/maviyom-vtol-3900-h"
           }
         }
       },
@@ -380,6 +504,10 @@
           "aboutUs": {
             "label": "About Maviyom",
             "href": "/about-us"
+          },
+          "products": {
+            "label": "Products",
+            "href": "/products"
           },
           "contactUs": {
             "label": "Contact Us",

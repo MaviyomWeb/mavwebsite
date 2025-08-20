@@ -12,27 +12,14 @@ const AboutHero = () => {
   return (
     <>
       <div className="flex flex-wrap flex-grow flex-shrink flex-auto  items-center pt-4 964Screen:pt-10 pb-10 964Screen:pb-20">
-        <div
-          className={`content 964Screen:w-1/2 964Screen:pr-[32px] lg:pr-[64px] xl:pr-[100px] flex flex-col
-         
-    
-    `}
-        >
+        <div className={`content 964Screen:w-1/2 964Screen:pr-[32px] lg:pr-[64px] xl:pr-[100px] flex flex-col`}>
           <h4 className="relative uppercase text-base text-primary font-semibold tracking-[0.3px] mb-2 964Screen:mb-4">
             {t("section_title")}
           </h4>
-          <h2
-            style={{ lineHeight: "54px" }}
-            className={` relative text-3xl 964Screen:text-4xl lg:text-4xl  xl:text-5xl font-deca capitalize font-semibold leading-10 964Screen:leading-[54px]  tracking-[-.92px] text-[#1b243f] mb-3 964Screen:mb-5
-          
-    `}
-          >
+          <h2 className={` relative text-3xl 964Screen:text-4xl lg:text-4xl  xl:text-5xl font-deca capitalize font-semibold leading-[40px] 964Screen:leading-[54px] lg:leading-[55px]  tracking-[-.92px] text-[#1b243f] mb-3 964Screen:mb-5`}>
             {t("headline")}
           </h2>
-          <p
-            className={` text-gray-800 pb-5 text-lg xs:text-lg md:text-base
-            `}
-          >
+          <p className={` text-gray-800 pb-5 text-lg xs:text-lg md:text-base`}>
             {t("description")}
           </p>
 

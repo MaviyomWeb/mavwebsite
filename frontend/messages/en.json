@@ -21,11 +21,6 @@
         "label": "Careers",
         "href": "/career"
       },
-      "Blog": {
-        "id": "5",
-        "label": "Blog",
-        "href": "/blog"
-      },
       "Contact": {
         "id": "6",
         "label": "Contact",
@@ -242,7 +237,6 @@
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and research lead specializing in advanced aerodynamics and aerospace AI innovation.",
           "imageSrc": "/shaurya.jpg"
         }
-        
       }
     },
     "director_section": {
@@ -268,7 +262,6 @@
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) with expertise in blending technical skills and business insight to lead innovation and drive sustainable growth.",
           "imageSrc": "/mridul-aggarwal.jpg"
         }
-        
       }
     },
     "advisor_section": {
@@ -286,7 +279,7 @@
           "name": "LT. CMDR. ASHUTOSH MOHANTEY (RETD.)",
           "description": "Business Development Advisor"
         },
-         "advisor4": {
+        "advisor4": {
           "name": "M. S. CHAUHAN",
           "description": "Business Development Advisor"
         },
@@ -298,8 +291,6 @@
           "name": "RADHEY SHYAM VERMA",
           "description": "Board Advisor-Head of Finance, SOS Angola"
         }
-      
-        
       }
     },
     "leader_section": {
@@ -335,7 +326,6 @@
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and research lead specializing in advanced aerodynamics and aerospace AI innovation.",
           "imageSrc": "/shaurya.jpg"
         }
-        
       }
     }
   },
@@ -406,6 +396,114 @@
           "Familiarity with RTOS, low-power firmware optimization, or fault-tolerant systems.",
           "Exposure to scripting (e.g., Python) for automation, data logging, or hardware validation.",
           "Understanding of aerospace or UAV compliance and regulatory standards."
+        ]
+      },
+      "FlightStackLead": {
+        "Header": "Flight-Stack Lead (PX4 / Autopilot)",
+        "Description": "Lead the migration from ArduPilot to PX4 and build next-gen autopilot systems across multiple UAV platforms.",
+        "Responsibilities": [
+          "Lead migration from ArduPilot to PX4 across multiple UAV platforms (quad, hex, VTOL, nano, cargo).",
+          "Integrate vSLAM (visual simultaneous localisation and mapping) + IMU fusion for GPS-denied navigation.",
+          "Design and maintain robust failsafe behaviours (auto-hold, return-to-home, swarm handoff).",
+          "Ensure code quality with MISRA-C compliance and hardware-in-the-loop regression testing."
+        ],
+        "Qualifications": [
+          "6+ years in embedded flight-control or aerospace autopilot development.",
+          "Strong expertise in PX4/NuttX RTOS and C/C++.",
+          "Demonstrated experience in control law modelling (MATLAB/Simulink).",
+          "Hands-on flight test and tuning experience."
+        ],
+        "BonusSkills": [
+          "Familiarity with DGQA certification standards and defense-grade autopilot requirements.",
+          "Experience optimising for low-latency flight control loops.",
+          "Strong debugging skills with oscilloscopes, logic analysers, and HIL rigs."
+        ]
+      },
+      "EdgeAIArchitect": {
+        "Header": "Edge-AI Architect",
+        "Description": "Architect and optimise our 8-TOPS low-power edge AI module for UAV applications.",
+        "Responsibilities": [
+          "Architect our 8-TOPS low-power edge AI module.",
+          "Develop and optimise vision models for object detection, recognition, and tracking.",
+          "Quantise, prune, and compress neural networks for ≤10 W power budget.",
+          "Build APIs for adaptive route re-planning, loitering and swarm logic.",
+          "Oversee OTA AI model update pipeline linked to Indore GPU cluster."
+        ],
+        "Qualifications": [
+          "5+ years in embedded deep learning or robotics AI.",
+          "Proficiency with PyTorch, TensorRT, ONNX, CUDA.",
+          "Experience deploying models on Nvidia Jetson, Qualcomm Robotics or similar.",
+          "Strong grasp of computer vision and real-time inference."
+        ],
+        "BonusSkills": [
+          "Prior work with ISR imagery datasets.",
+          "Knowledge of adversarial robustness and AI security.",
+          "Strong collaboration with hardware teams for thermal/power optimisation."
+        ]
+      },
+      "SwarmECCMLead": {
+        "Header": "Swarm & ECCM Protocol Lead",
+        "Description": "Design resilient, encrypted mesh networking and advanced ECCM protocols for UAV swarm operations.",
+        "Responsibilities": [
+          "Design and deliver MESH-ADR communications layer for swarms.",
+          "Develop encrypted mesh networking with self-healing and sub-second task allocation.",
+          "Implement spectrum-hopping, ECCM and LPI/LPD waveforms.",
+          "Validate resilience through simulation, HIL testing, and outdoor swarm trials."
+        ],
+        "Qualifications": [
+          "7+ years in wireless communications, tactical radios, or UAV networking.",
+          "Deep knowledge of SDR, FHSS.",
+          "Proficiency in embedded firmware (C/C++).",
+          "Experience with secure communications and crypto protocols."
+        ],
+        "BonusSkills": [
+          "Background in military-grade comms or defense R&D projects.",
+          "Familiarity with mesh routing protocols and swarm robotics.",
+          "Strong analytical skills for RF propagation and link-budget modelling."
+        ]
+      },
+      "GroundControlUXLead": {
+        "Header": "Ground-Control & UX Lead",
+        "Description": "Lead development of next-gen GCS with advanced multi-drone operations and operator-first UX design.",
+        "Responsibilities": [
+          "Design next-gen GCS for multi-airframe fleet operations.",
+          "Implement features: 3-D terrain, geofencing, multi-drone handoff.",
+          "Develop operator plug-ins for ISR analytics.",
+          "Ensure compliance with STANAG 4609 video export standards.",
+          "Lead UX testing with military and paramilitary operators."
+        ],
+        "Qualifications": [
+          "6+ years in GCS or mission-control software development.",
+          "Proficiency in Qt/QML, React, and GIS libraries.",
+          "Understanding of military interoperability standards (STANAG).",
+          "Strong background in user-centric interface design."
+        ],
+        "BonusSkills": [
+          "Past experience with defense or aerospace mission systems.",
+          "Ability to balance minimal training burden with advanced functionality.",
+          "Exposure to speech/voice command integration."
+        ]
+      },
+      "DevOpsHPCLead": {
+        "Header": "DevOps & HPC Lead",
+        "Description": "Own DevOps pipelines, GPU cluster optimisation, and OTA release processes for UAV software systems.",
+        "Responsibilities": [
+          "Build CI/CD pipelines for PX4, AI models, and swarm firmware.",
+          "Manage hardware-in-the-loop regression and fuzz testing.",
+          "Implement static analysis, SBOM scans, and compliance checks.",
+          "Optimise GPU cluster workloads for CFD and swarm training.",
+          "Oversee OTA release process and blue-green deployments."
+        ],
+        "Qualifications": [
+          "5+ years in DevOps, SRE, or robotics software infra.",
+          "Experience with GitLab CI, Kubernetes, Docker, and GPU cluster management.",
+          "Familiar with cybersecurity compliance (NIST, ISO 27001).",
+          "Strong background in scripting (Python, Bash)."
+        ],
+        "BonusSkills": [
+          "Prior experience in aerospace or robotics DevOps environments.",
+          "Knowledge of flight software toolchains (PX4 SITL, Gazebo).",
+          "Passion for automation, observability, and infrastructure as code."
         ]
       }
     }
@@ -512,10 +610,6 @@
           "contactUs": {
             "label": "Contact Us",
             "href": "/contact-us"
-          },
-          "blog": {
-            "label": "Blog",
-            "href": "/blog"
           },
           "Career": {
             "label": "Career",

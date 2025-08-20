@@ -12,7 +12,7 @@ export default function Home({ params }) {
       <OurProducts1 locale={locale} />
       <Specs />
       <AboutCompany />
-      <Blogs locale={locale} />
+      {/* <Blogs locale={locale} /> */}
     </>
   );
 }

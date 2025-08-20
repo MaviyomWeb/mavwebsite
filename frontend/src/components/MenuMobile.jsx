@@ -10,39 +10,29 @@ import { VscChromeClose } from "react-icons/vsc";
 import { useTranslations } from "use-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
 
-const MenuMobile = ({
-  showCatMenu,
-  setShowCatMenu,
-  setMobileMenu,
-  mobileMenu,
-}) => {
+const MenuMobile = ({ activeSubmenu, setActiveSubmenu, setMobileMenu, mobileMenu }) => {
   const hideShowMenu = () => {
-    setShowCatMenu(false);
+    setActiveSubmenu(null);
     setMobileMenu(false);
   };
 
   useEffect(() => {
-    const handleBodyOverflow = () => {
-      if (mobileMenu) {
-        document.body.classList.add("overflow-hidden");
-      } else {
-        document.body.classList.remove("overflow-hidden");
-      }
-    };
-
-    handleBodyOverflow(); // Call it immediately to set initial state
-
+    if (mobileMenu) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
     return () => {
-      // Cleanup function to remove the class when the component unmounts
       document.body.classList.remove("overflow-hidden");
     };
-  }, [mobileMenu]); // Re-run the effect when mobileMenu changes
+  }, [mobileMenu]);
 
   const messages = useMessages();
   const t = useTranslations("Header");
 
   const navLinks = Object.keys(messages.Header.navLinks);
   const subNavCategories = Object.keys(messages.Header.subNavLinks);
+  const aboutLinks = Object.keys(messages.Header.aboutSubLinks);
 
   return (
     <div className="">
@@ -75,138 +65,121 @@ const MenuMobile = ({
           <LocaleSwitcher />
         </div>
 
-        <ul
-          className={`flex flex-col gap-4 pl-2   text-secondary 
-            `}
-        >
+        {/* Links */}
+        <ul className="flex flex-col gap-4 pl-2 text-secondary">
           {navLinks.map((navLink) => {
-            return (
-              <Fragment key={`${t(`navLinks.${navLink}.id`)}`}>
-                {!messages.Header.navLinks[navLink].href ? (
-                  <li
-                    className="relative  flex flex-col"
-                    onClick={() => setShowCatMenu((prev) => !prev)}
-                  >
-                    <div
-                      className={`cursor-pointer  flex text-lg  items-center justify-between ${
-                        showCatMenu ? "text-primary" : "text-secondary"
-                      } `}
-                    >
-                      {`${t(`navLinks.${navLink}.label`)}`}
-                      <BsChevronDown
-                        size={20}
-                        className={`text-current transition-transform ease-in-out duration-200 ${
-                          showCatMenu
-                            ? "text-primary rotate-180"
-                            : "text-secondary rotate-0"
-                        } `}
-                      />
-                    </div>
+            const linkData = messages.Header.navLinks[navLink];
+            const isAbout = navLink === "About";
+            const isProducts = navLink === "Products";
 
-                    {showCatMenu && (
-                      <ul className={`dropdown-menu       `}>
-                        {subNavCategories?.map((subNavCategory, index) => {
-                          return (
-                            <li className="dropdown " key={index}>
-                              <div className="dropdown-inner">
-                                <div className="dropdown-item">
-                                  <h3
-                                    className="relative item-heading mt-2 mb-3  text-base   text-secondary font-semibold *:
+            if (isAbout || isProducts) {
+              return (
+                <li key={linkData.id} className="relative flex flex-col">
+                  {/* Toggle Button */}
+                  <button
+                    className={`cursor-pointer flex text-lg items-center justify-between ${
+                      activeSubmenu === navLink.toLowerCase() ? "text-primary" : "text-secondary"
+                    }`}
+                    onClick={() =>
+                      setActiveSubmenu(
+                        activeSubmenu === navLink.toLowerCase() ? null : navLink.toLowerCase()
+                      )
+                    }
+                  >
+                    {t(`navLinks.${navLink}.label`)}
+                    <BsChevronDown
+                      size={20}
+                      className={`text-current transition-transform ease-in-out duration-200  ${
+                        activeSubmenu === navLink.toLowerCase() ? "rotate-180 text-primary" : "rotate-0"
+                      }`}
+                    />
+                  </button>
+
+                  {/* About Submenu */}
+                  {isAbout && activeSubmenu === "about" && (
+                    <ul className="pl-4 mt-2 flex flex-col gap-2">
+                      {aboutLinks.map((aboutKey) => (
+                        <li key={aboutKey}>
+                          <Link
+                            href={t(`aboutSubLinks.${aboutKey}.href`)}
+                            onClick={hideShowMenu}
+                            className="block text-lg hover:text-primary"
+                          >
+                            {t(`aboutSubLinks.${aboutKey}.label`)}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {/* Products Submenu */}
+                  {isProducts && activeSubmenu === "products" && (
+                    <ul className="pl-4 mt-2">
+                      {subNavCategories.map((subNavCategory, index) => (
+                        <li key={index}>
+                          <h3 className="relative item-heading mt-2 mb-3  text-base   text-secondary font-semibold *:
                             after:content-[''] after:absolute after:top-full after:left-0 after:h-[3px] after:w-8 after:bg-primary
-                            "
-                                  >
+                            ">
+                            {t(`subNavLinks.${subNavCategory}.category`)}:
+                          </h3>
+                          {Object.keys(messages.Header.subNavLinks[subNavCategory].products).map(
+                            (product, i) => (
+                              <Link
+                                key={i} 
+                                className="group/link flex flex-col lg:flex-row items-center md:items-start justify-between rounded-md p-1 border  duration-150  mb-3   "
+                                href={t(
+                                  `subNavLinks.${subNavCategory}.products.${product}.href`
+                                )}
+                                onClick={hideShowMenu}
+                              >
+                                <Image
+                                  src={t(
+                                    `subNavLinks.${subNavCategory}.products.${product}.image`
+                                  )}
+                                  alt={t(
+                                    `subNavLinks.${subNavCategory}.products.${product}.label`
+                                  )}
+                                  width={200}
+                                  height={80}
+                                  sizes="100vw"
+                                  placeholder="blur"
+                                  blurDataURL="/1x1-ffffffff.webp"
+                                  style={{ width: "100%", height: "auto" }}
+                                />
+                                <div className="flex flex-col text-center ml-2">
+                                  <span className="mb-1 text-xl font-semibold text-dark group-hover/link:text-secondary">
                                     {t(
-                                      `subNavLinks.${subNavCategory}.category`
+                                      `subNavLinks.${subNavCategory}.products.${product}.label`
                                     )}
-                                    :
-                                  </h3>
-                                  {Object.keys(
-                                    messages.Header.subNavLinks[subNavCategory]
-                                      .products
-                                  ).map((product, i) => {
-                                    return (
-                                      <Link
-                                        key={i}
-                                        className="group/link flex items-center justify-between rounded-md p-1 border  duration-150  mb-3   "
-                                        href={t(
-                                          `subNavLinks.${subNavCategory}.products.${product}.href`
-                                        )}
-                                        onClick={hideShowMenu}
-                                      >
-                                        <span className="flex flex-col justify-center  items-center gap-2  ">
-                                          {/* <span
-                                            className={`   rounded ${
-                                              product?.label === "Maviyom 25L"
-                                                ? "h-32"
-                                                : "h-20"
-                                            } `}
-                                          >
-                                            <img
-                                              src={product?.image}
-                                              alt={product?.label}
-                                              className={` w-full object-cover ${
-                                                product?.label === "Maviyom 25L"
-                                                  ? "h-36"
-                                                  : "h-full"
-                                              }`}
-                                            />
-                                          </span> */}
-                                          <span>
-                                            <Image
-                                              src={t(
-                                                `subNavLinks.${subNavCategory}.products.${product}.image`
-                                              )}
-                                              alt={t(
-                                                `subNavLinks.${subNavCategory}.products.${product}.label`
-                                              )}
-                                              sizes="100vw"
-                                              // Make the image display full width
-                                              width={200}
-                                              height={80}
-                                              placeholder="blur"
-                                              blurDataURL="/1x1-ffffffff.webp"
-                                              style={{
-                                                width: "100%",
-                                                height: "auto",
-                                              }}
-                                            />
-                                          </span>
-                                          <span className=" flex-grow text-center">
-                                            <span className="mb-1 block text-xl font-semibold text-dark group-hover/link:text-secondary ">
-                                              {t(
-                                                `subNavLinks.${subNavCategory}.products.${product}.label`
-                                              )}
-                                            </span>
-                                            <span className="block  font-medium text-gray-600">
-                                              {t(
-                                                `subNavLinks.${subNavCategory}.products.${product}.description`
-                                              )}
-                                            </span>
-                                          </span>
-                                        </span>
-                                      </Link>
-                                    );
-                                  })}
+                                  </span>
+                                  <span className="text-gray-600 text-sm">
+                                    {t(
+                                      `subNavLinks.${subNavCategory}.products.${product}.description`
+                                    )}
+                                  </span>
                                 </div>
-                              </div>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    )}
-                  </li>
-                ) : (
-                  <li className="cursor-pointer">
-                    <Link
-                      href={`${t(`navLinks.${navLink}.href`)}`}
-                      onClick={hideShowMenu}
-                      className=" transition-colors ease-in-out duration-150 text-lg hover:text-primary "
-                    >
-                      {`${t(`navLinks.${navLink}.label`)}`}
-                    </Link>
-                  </li>
-                )}
-              </Fragment>
+                              </Link>
+                            )
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              );
+            }
+
+            // Normal links (Home, Careers, Contact)
+            return (
+              <li key={linkData.id}>
+                <Link
+                  href={t(`navLinks.${navLink}.href`)}
+                  onClick={hideShowMenu}
+                  className="transition-colors text-lg hover:text-primary"
+                >
+                  {t(`navLinks.${navLink}.label`)}
+                </Link>
+              </li>
             );
           })}
         </ul>

@@ -20,15 +20,15 @@ const Team = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="grid grid-cols-12 gap-8">
+    <div className="container mx-auto px-4 py-6 sm:py-10">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
         
         {/* LEFT COLUMN */}
-        <div className="bg-white rounded-lg p-10 col-span-12 md:col-span-8 shadow-[0_0_20px_rgba(0,0,0,0.15)]">
-          <h2 className="text-3xl sm:text-4xl font-bold text-secondary mb-4">
+        <div className="bg-white rounded-lg p-4 sm:p-6 lg:p-10 col-span-12 md:col-span-8 shadow-[0_0_20px_rgba(0,0,0,0.15)]">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-secondary mb-4 sm:mb-6 text-center md:text-left">
             The Team of Maviyom is a PEARL
           </h2>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+          <ul className="list-disc pl-5 sm:pl-6 space-y-2 text-gray-700 mb-6 text-sm sm:text-base">
             <li>Passion Driven Core Team</li>
             <li>Educated Directors</li>
             <li>Advisors from Multi Skills and Disciplines</li>
@@ -38,7 +38,7 @@ const Team = () => {
 
           {/* Table */}
           <div className="overflow-x-auto">
-            <table className="w-full border border-gray-600 text-sm border-collapse">
+            <table className="min-w-full border border-gray-600 text-xs sm:text-sm border-collapse">
               <thead className="bg-blue-500 text-white">
                 <tr>
                   <th className="p-2 border border-gray-800">S. NO.</th>
@@ -67,8 +67,8 @@ const Team = () => {
         <div className="col-span-12 md:col-span-4 bg-white shadow-[0_0_20px_rgba(0,0,0,0.15)] rounded-lg p-6 pt-[75px]">
           {leadershipLinks.map((link) => (
             <Link key={link.title} href={link.href}>
-              <div className="text-secondary text-lg border-2 border-secondary hover:text-white hover:bg-secondary  font-medium font-poppins rounded-full text-center px-6 py-3 mb-8 mr-10 ml-10 transition-all ease-in-out duration-200">
-                <h3 className="text-lg font-semibold">{link.title}</h3>
+              <div className="text-secondary text-base sm:text-lg border-2 border-secondary hover:text-white hover:bg-secondary  font-medium font-poppins rounded-full text-center px-4 sm:px-6 py-2 sm:py-3 mb-8 mr-10 ml-10 transition-all ease-in-out duration-200">
+                <h3 className="text-sm sm:text-lg font-semibold">{link.title}</h3>
               </div>
             </Link>
           ))}

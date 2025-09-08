@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Container from "@/components/Container";
 import React from "react";
@@ -10,12 +10,29 @@ const Career = () => {
   const t = useTranslations("CareerPage");
   const messages = useMessages();
   const careerKeys = Object.keys(messages.CareerPage.Careers);
-  const [openIndex, setOpenIndex] = React.useState(null); // controls which job is open
+  const [openIndex, setOpenIndex] = React.useState(null);
+  const [selectedCategory, setSelectedCategory] = React.useState(null);
 
+  // ✅ Example categories – must match your i18n data structure
+  const categories = [
+    "R&D",
+    "Manufacturing",
+    "Software",
+    "Business Development",
+    "Pilots",
+    "Others",
+  ];
+
+  // ✅ Filter jobs based on selected category
+  const filteredCareers = selectedCategory
+    ? careerKeys.filter(
+        (careerKey) =>
+          messages.CareerPage.Careers[careerKey].Category === selectedCategory
+      )
+    : [];
 
   return (
     <div className="relative w-full bg-gray-50">
-      {/* Hero Section */}
       <section className="relative h-72 md:h-[200px] overflow-hidden">
         <Image
           src="/payload-hero-banner.webp"
@@ -31,22 +48,53 @@ const Career = () => {
         </div>
       </section>
 
-      {/* Career Cards - One Column */}
-      <section className="py-16">
+      <section className="py-10">
         <Container>
-          <div className="flex flex-col items-center gap-12">
-            {careerKeys.map((careerKey, index) => (
-  <CareerItem
-    key={careerKey}
-    careerKey={careerKey}
-    t={t}
-    messages={messages}
-    isOpen={openIndex === index}             // only one open at a time
-    onToggle={() =>
-      setOpenIndex(openIndex === index ? null : index)
-    }
-  />
-))}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-10">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => {
+                  setSelectedCategory(cat);
+                  setOpenIndex(null); 
+                }}
+                className={`px-4 py-3 rounded-lg text-center font-semibold transition ${
+                  selectedCategory === cat
+                    ? "bg-[#0D0C22] text-white hover:bg-[#0D0C22]"
+                    : "bg-[#1d69e7] text-white shadow-md "
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+           {/* Career Jobs */}
+          <div className="flex flex-col items-center gap-6">
+            {selectedCategory ? (
+              filteredCareers.length > 0 ? (
+                filteredCareers.map((careerKey, index) => (
+                  <CareerItem
+                    key={careerKey}
+                    careerKey={careerKey}
+                    t={t}
+                    messages={messages}
+                    isOpen={openIndex === index}
+                    onToggle={() =>
+                      setOpenIndex(openIndex === index ? null : index)
+                    }
+                  />
+                ))
+              ) : (
+                <p className="text-gray-500">
+                  No jobs available in this category.
+                </p>
+              )
+            ) : (
+              <p className="text-gray-400 italic">
+                Select a category to view jobs.
+              </p>
+            )}
           </div>
         </Container>
       </section>

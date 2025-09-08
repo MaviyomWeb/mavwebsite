@@ -322,7 +322,7 @@
         },
         "cro": {
           "name": "SHAURYA SINGH RAWAT",
-          "role": "CDO",
+          "role": "CRDO",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and research lead specializing in advanced aerodynamics and aerospace AI innovation.",
           "imageSrc": "/shaurya.jpg"
         }
@@ -334,6 +334,7 @@
     "Careers": {
       "DesignEngineer": {
         "Header": "Design Engineer – UAV Systems",
+         "Category": "R&D", 
         "Description": "We’re looking for a driven and hands-on Design Engineer to join our growing UAV startup. This role is ideal for someone with around 3+ years of experience in mechanical design and development—who’s ready to take full ownership of the mechanical and electromechanical aspects of UAV systems. As a core team member, you’ll work across product design, structural systems, payload integration, and mechanical-electronics packaging—contributing directly to the development of reliable, high-performance UAV platforms from the ground up.",
         "Responsibilities": [
           "Design and develop UAV mechanical and electromechanical systems using modern CAD tools (e.g., SolidWorks, Fusion 360, AutoCAD).",
@@ -368,6 +369,7 @@
       },
       "ElectronicsEngineer": {
         "Header": "Electronics Engineer – UAV Systems",
+        "Category": "R&D", 
         "Description": "We’re looking for a hands-on, cross-functional Electronics Engineer to join our core team and help develop the critical electronic systems powering our UAV platforms. If you're passionate about drones, embedded tech, and building real systems from scratch, this is your opportunity to own the electronics stack—from schematic to sky. In this high-impact role, you’ll be responsible for designing and implementing electronics hardware, embedded firmware, and wireless communication systems, while working closely with the mechanical, software, and flight systems teams.",
         "Responsibilities": [
           "Design, simulate, and develop PCBs for UAV subsystems including power distribution, sensor interfaces, and signal conditioning.",
@@ -400,6 +402,7 @@
       },
       "FlightStackLead": {
         "Header": "Flight-Stack Lead (PX4 / Autopilot)",
+        "Category": "R&D",
         "Description": "Lead the migration from ArduPilot to PX4 and build next-gen autopilot systems across multiple UAV platforms.",
         "Responsibilities": [
           "Lead migration from ArduPilot to PX4 across multiple UAV platforms (quad, hex, VTOL, nano, cargo).",
@@ -421,6 +424,7 @@
       },
       "EdgeAIArchitect": {
         "Header": "Edge-AI Architect",
+        "Category": "R&D",
         "Description": "Architect and optimise our 8-TOPS low-power edge AI module for UAV applications.",
         "Responsibilities": [
           "Architect our 8-TOPS low-power edge AI module.",
@@ -443,6 +447,7 @@
       },
       "SwarmECCMLead": {
         "Header": "Swarm & ECCM Protocol Lead",
+        "Category": "R&D",
         "Description": "Design resilient, encrypted mesh networking and advanced ECCM protocols for UAV swarm operations.",
         "Responsibilities": [
           "Design and deliver MESH-ADR communications layer for swarms.",
@@ -464,6 +469,7 @@
       },
       "GroundControlUXLead": {
         "Header": "Ground-Control & UX Lead",
+        "Category": "Software",
         "Description": "Lead development of next-gen GCS with advanced multi-drone operations and operator-first UX design.",
         "Responsibilities": [
           "Design next-gen GCS for multi-airframe fleet operations.",
@@ -486,6 +492,7 @@
       },
       "DevOpsHPCLead": {
         "Header": "DevOps & HPC Lead",
+        "Category": "Software",
         "Description": "Own DevOps pipelines, GPU cluster optimisation, and OTA release processes for UAV software systems.",
         "Responsibilities": [
           "Build CI/CD pipelines for PX4, AI models, and swarm firmware.",

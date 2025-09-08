@@ -87,7 +87,7 @@ import emailjs from "@emailjs/browser";
       <button
         // onClick={() => setIsOpen(!isOpen)}
         onClick={onToggle}
-        className="w-full text-left px-8 py-6  transition text-xl font-semibold text-[#0D0C22] flex justify-between items-center ${
+        className="w-full text-left px-6 py-4  transition text-xl font-semibold text-[#0D0C22] flex justify-between items-center ${
     isOpen ? 'bg-white' : 'bg-gray-100 hover:bg-gray-200'"
       >
         <span>{careerData.Header}</span>

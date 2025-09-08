@@ -36,7 +36,7 @@ const Product = async ({ params }) => {
 
 
   return (
-    <div className="relative isolate z-0 pb-10 md:pb-20  mt-10 ">
+    <div className="relative isolate z-0 pb-10 md:pb-20  mt-10 pt-10">
       <>
         <Container>
           <ProductDetails
@@ -60,7 +60,7 @@ const Product = async ({ params }) => {
       )}
 
       <Container>
-        <Applications data={product} locale={locale} />
+        {/* <Applications data={product} locale={locale} /> */}
       </Container>
     </div>
   );

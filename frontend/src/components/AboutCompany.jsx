@@ -66,7 +66,7 @@ const AboutCompany = () => {
 
               <div className="flex flex-grow relative pl-10  ">
                 <img
-                  src="/agri-25L.webp"
+                  src="/drone2.jpg"
                   alt="about"
                   className="h-80 md:h-full w-full rounded-md   object-cover  "
                 />

@@ -4,7 +4,7 @@ import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 // const CareerItem = ({ careerKey, t, messages }) => {
-  const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
+const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
 
   // const [isOpen, setIsOpen] = useState(false); 
   const [showPopup, setShowPopup] = useState(false);
@@ -25,11 +25,11 @@ import emailjs from "@emailjs/browser";
   const formatWithLineBreaks = (value) => {
     return value.includes("/n")
       ? value.split("/n").map((line, i) => (
-          <React.Fragment key={i}>
-            {line.trim()}
-            <br />
-          </React.Fragment>
-        ))
+        <React.Fragment key={i}>
+          {line.trim()}
+          <br />
+        </React.Fragment>
+      ))
       : value;
   };
 
@@ -97,6 +97,18 @@ import emailjs from "@emailjs/browser";
       {/* Accordion Content */}
       {isOpen && (
         <div className="p-8 space-y-6 text-gray-700">
+          <section className="">
+            <h3 className="font-bold uppercase text-[#1d69e7] mb-2">Job Overview</h3>
+
+            <div className="space-y-2 text-gray-700">
+              <p><span className="font-semibold">Experience Required:</span> {careerData.ExperienceRequired}</p>
+              <p><span className="font-semibold">Location:</span> {careerData.Location}</p>
+              <p><span className="font-semibold">Employment Type:</span> {careerData.EmploymentType}</p>
+
+              <h4 className="font-semibold text-lg mt-4">Job Summary</h4>
+              <p>{careerData.Description}</p>
+            </div>
+          </section>
           <div>
             <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Key Responsibilities</h4>
             <ul className="list-disc pl-5 space-y-1">

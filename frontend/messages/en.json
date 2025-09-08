@@ -334,7 +334,10 @@
     "Careers": {
       "DesignEngineer": {
         "Header": "Design Engineer – UAV Systems",
-         "Category": "R&D", 
+        "Category": "R&D",
+        "ExperienceRequired": "3-5 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
         "Description": "We’re looking for a driven and hands-on Design Engineer to join our growing UAV startup. This role is ideal for someone with around 3+ years of experience in mechanical design and development—who’s ready to take full ownership of the mechanical and electromechanical aspects of UAV systems. As a core team member, you’ll work across product design, structural systems, payload integration, and mechanical-electronics packaging—contributing directly to the development of reliable, high-performance UAV platforms from the ground up.",
         "Responsibilities": [
           "Design and develop UAV mechanical and electromechanical systems using modern CAD tools (e.g., SolidWorks, Fusion 360, AutoCAD).",
@@ -369,7 +372,10 @@
       },
       "ElectronicsEngineer": {
         "Header": "Electronics Engineer – UAV Systems",
-        "Category": "R&D", 
+        "Category": "R&D",
+        "ExperienceRequired": "3-5 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
         "Description": "We’re looking for a hands-on, cross-functional Electronics Engineer to join our core team and help develop the critical electronic systems powering our UAV platforms. If you're passionate about drones, embedded tech, and building real systems from scratch, this is your opportunity to own the electronics stack—from schematic to sky. In this high-impact role, you’ll be responsible for designing and implementing electronics hardware, embedded firmware, and wireless communication systems, while working closely with the mechanical, software, and flight systems teams.",
         "Responsibilities": [
           "Design, simulate, and develop PCBs for UAV subsystems including power distribution, sensor interfaces, and signal conditioning.",
@@ -402,7 +408,10 @@
       },
       "FlightStackLead": {
         "Header": "Flight-Stack Lead (PX4 / Autopilot)",
-        "Category": "R&D",
+        "Category": "Software",
+        "ExperienceRequired": "6+ years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
         "Description": "Lead the migration from ArduPilot to PX4 and build next-gen autopilot systems across multiple UAV platforms.",
         "Responsibilities": [
           "Lead migration from ArduPilot to PX4 across multiple UAV platforms (quad, hex, VTOL, nano, cargo).",
@@ -424,7 +433,10 @@
       },
       "EdgeAIArchitect": {
         "Header": "Edge-AI Architect",
-        "Category": "R&D",
+        "Category": "Software",
+        "ExperienceRequired": "5+ years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
         "Description": "Architect and optimise our 8-TOPS low-power edge AI module for UAV applications.",
         "Responsibilities": [
           "Architect our 8-TOPS low-power edge AI module.",
@@ -447,7 +459,10 @@
       },
       "SwarmECCMLead": {
         "Header": "Swarm & ECCM Protocol Lead",
-        "Category": "R&D",
+        "Category": "Software",
+        "ExperienceRequired": "7+ years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
         "Description": "Design resilient, encrypted mesh networking and advanced ECCM protocols for UAV swarm operations.",
         "Responsibilities": [
           "Design and deliver MESH-ADR communications layer for swarms.",
@@ -470,6 +485,9 @@
       "GroundControlUXLead": {
         "Header": "Ground-Control & UX Lead",
         "Category": "Software",
+        "ExperienceRequired": "6+ years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
         "Description": "Lead development of next-gen GCS with advanced multi-drone operations and operator-first UX design.",
         "Responsibilities": [
           "Design next-gen GCS for multi-airframe fleet operations.",
@@ -493,6 +511,9 @@
       "DevOpsHPCLead": {
         "Header": "DevOps & HPC Lead",
         "Category": "Software",
+        "ExperienceRequired": "5+ years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
         "Description": "Own DevOps pipelines, GPU cluster optimisation, and OTA release processes for UAV software systems.",
         "Responsibilities": [
           "Build CI/CD pipelines for PX4, AI models, and swarm firmware.",
@@ -511,6 +532,534 @@
           "Prior experience in aerospace or robotics DevOps environments.",
           "Knowledge of flight software toolchains (PX4 SITL, Gazebo).",
           "Passion for automation, observability, and infrastructure as code."
+        ]
+      },
+      "ManufacturingEngineer": {
+        "Header": "Manufacturing Engineer",
+        "Category": "Manufacturing",
+        "ExperienceRequired": "3-5 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "We are seeking an experienced Manufacturing Engineer to optimize our UAV production processes, improve efficiency, and ensure quality standards. You will play a crucial role in scaling our manufacturing operations as we grow from startup to established manufacturer.",
+        "Responsibilities": [
+          "Design and optimize manufacturing processes for UAV components and assemblies.",
+          "Develop and implement lean manufacturing principles to reduce waste and improve efficiency.",
+          "Collaborate with design teams to ensure manufacturability of new products.",
+          "Create and maintain work instructions, process documentation, and quality control procedures.",
+          "Troubleshoot production issues and implement corrective actions.",
+          "Manage supplier relationships and evaluate new manufacturing technologies.",
+          "Conduct time studies and capacity planning for production scaling.",
+          "Ensure compliance with aerospace and drone manufacturing standards."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Manufacturing Engineering, Mechanical Engineering, or related field.",
+          "3+ years of experience in manufacturing engineering, preferably in aerospace, electronics, or precision manufacturing.",
+          "Proficiency in CAD software (SolidWorks, AutoCAD) and manufacturing simulation tools.",
+          "Knowledge of lean manufacturing, Six Sigma, and process improvement methodologies.",
+          "Experience with materials such as carbon fiber, aluminum, and advanced composites.",
+          "Understanding of quality management systems (ISO 9001, AS9100 preferred).",
+          "Knowledge of Indian manufacturing standards and BIS compliance requirements.",
+          "Strong analytical and problem-solving skills."
+        ],
+        "BonusSkills": [
+          "Experience in drone/UAV or aerospace manufacturing.",
+          "Knowledge of additive manufacturing and CNC machining.",
+          "Familiarity with electronics assembly processes.",
+          "Project management experience."
+        ]
+      },
+      "DronePilotFPVSpecialist": {
+        "Header": "Drone Pilot (FPV Specialist)",
+        "Category": "Pilots",
+        "ExperienceRequired": "2+ years",
+        "Location": "On-site with field operations",
+        "EmploymentType": "Full-time",
+        "Description": "Join our team as a skilled Drone Pilot specializing in FPV operations to support product testing, demonstrations, marketing content, and customer training. You'll be instrumental in validating our UAV performance and showcasing capabilities to clients.",
+        "Responsibilities": [
+          "Conduct flight testing of new UAV prototypes and production units.",
+          "Perform FPV flights for product validation and performance analysis.",
+          "Create compelling aerial footage for marketing and demonstration purposes.",
+          "Provide technical flight training to customers and internal teams.",
+          "Develop flight test protocols and safety procedures.",
+          "Collaborate with engineering teams to provide flight performance feedback.",
+          "Maintain detailed flight logs and performance data.",
+          "Ensure compliance with DGCA regulations, NPNT (No Permission No Takeoff) protocols, and company safety standards.",
+          "Support trade shows and customer demonstrations."
+        ],
+        "Qualifications": [
+          "DGCA Remote Pilot License (RPL) for Small/Medium category drones.",
+          "UIN (Unique Identification Number) registration experience.",
+          "2+ years of professional drone piloting experience.",
+          "Extensive FPV flying experience with manual control proficiency.",
+          "Strong understanding of UAV systems, flight dynamics, and safety protocols.",
+          "Experience with various drone platforms and flight control systems.",
+          "Ability to troubleshoot technical issues during flight operations.",
+          "Excellent hand-eye coordination and spatial awareness.",
+          "Strong communication skills for training and client interactions."
+        ],
+        "BonusSkills": [
+          "Experience with racing drones and competitive FPV flying.",
+          "Knowledge of video production and aerial cinematography.",
+          "Familiarity with mission planning software.",
+          "Previous experience in UAV testing or validation.",
+          "Basic understanding of electronics and UAV assembly."
+        ]
+      },
+      "SrIndustrialEngineer": {
+        "Header": "Sr. Industrial Engineer",
+        "Category": "Manufacturing",
+        "ExperienceRequired": "5 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "We are looking for a seasoned Industrial Engineer to optimize our overall operations, from supply chain management to production floor layout. You'll lead efficiency initiatives and help establish scalable processes as we expand our manufacturing capacity.",
+        "Responsibilities": [
+          "Analyze and optimize end-to-end manufacturing workflows and facility layouts.",
+          "Develop capacity planning models and production scheduling systems.",
+          "Implement and maintain inventory management and supply chain optimization strategies.",
+          "Design ergonomic workstations and improve workplace safety standards.",
+          "Lead continuous improvement initiatives using lean and Six Sigma methodologies.",
+          "Conduct cost analysis and develop pricing models for manufacturing operations.",
+          "Manage production planning and resource allocation.",
+          "Establish KPIs and performance metrics for manufacturing operations.",
+          "Coordinate with quality assurance to implement statistical process control."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Industrial Engineering or related field.",
+          "5+ years of experience in industrial engineering, preferably in manufacturing environments.",
+          "Proficiency in statistical analysis software (Minitab, JMP) and ERP systems.",
+          "Strong background in lean manufacturing, Six Sigma (Green Belt or higher preferred).",
+          "Experience with facility layout design and workflow optimization.",
+          "Knowledge of supply chain management and inventory control systems.",
+          "Excellent analytical and quantitative skills.",
+          "Project management experience with cross-functional teams."
+        ],
+        "BonusSkills": [
+          "Experience in aerospace, electronics, or high-tech manufacturing.",
+          "Knowledge of automation and robotics integration.",
+          "Familiarity with MRP/ERP systems implementation.",
+          "Six Sigma Black Belt certification.",
+          "Experience with startup or high-growth environments."
+        ]
+      },
+      "QualityAssuranceEngineer": {
+        "Header": "Quality Assurance Engineer",
+        "Category": "Manufacturing",
+        "ExperienceRequired": "3-4 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Ensure our UAVs meet the highest quality standards through comprehensive testing, inspection, and quality control processes. You'll be responsible for establishing and maintaining quality systems that support our growth and customer satisfaction.",
+        "Responsibilities": [
+          "Develop and implement quality control procedures for UAV manufacturing.",
+          "Design and execute test protocols for functional, environmental, and durability testing.",
+          "Manage incoming inspection processes for components and materials.",
+          "Conduct root cause analysis for quality issues and implement corrective actions.",
+          "Maintain quality documentation and ensure compliance with industry standards.",
+          "Collaborate with suppliers on quality requirements and audits.",
+          "Support customer quality inquiries and warranty issues.",
+          "Train production staff on quality procedures and standards."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Engineering, Quality Management, or related field.",
+          "3-4 years of experience in quality assurance, preferably in manufacturing.",
+          "Knowledge of quality management systems (ISO 9001, AS9100).",
+          "Experience with statistical process control and quality tools.",
+          "Familiarity with testing equipment and measurement systems.",
+          "Strong attention to detail and analytical skills.",
+          "Excellent documentation and communication abilities."
+        ],
+        "BonusSkills": [
+          "Experience in aerospace or electronics quality assurance.",
+          "Knowledge of DGCA regulations for UAV manufacturing and type certification.",
+          "Understanding of Indian aerospace and defense procurement processes.",
+          "Six Sigma Green Belt or similar certification.",
+          "Experience with automated testing systems."
+        ]
+      },
+      "FirmwareEmbeddedSystemsEngineer": {
+        "Header": "Embedded Systems Engineer",
+        "Category": "R&D",
+        "ExperienceRequired": "4+ years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Develop and maintain the embedded software that powers our UAV systems. You'll work on flight control algorithms, sensor integration, and communication systems that are critical to our product performance and safety.",
+        "Responsibilities": [
+          "Design and develop firmware for UAV flight control systems.",
+          "Integrate sensors, GPS, and communication modules.",
+          "Implement flight algorithms and autonomous navigation features.",
+          "Debug and optimize embedded software performance.",
+          "Collaborate with hardware engineers on system integration.",
+          "Develop testing frameworks for embedded systems validation.",
+          "Maintain version control and documentation for firmware releases.",
+          "Support field testing and customer technical issues."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Computer Science, Electrical Engineering, or related field.",
+          "4+ years of experience in embedded systems development.",
+          "Proficiency in C/C++ programming for microcontrollers.",
+          "Experience with real-time operating systems (RTOS).",
+          "Knowledge of communication protocols (SPI, I2C, UART, CAN).",
+          "Familiarity with version control systems (Git) and debugging tools.",
+          "Understanding of sensor fusion and control algorithms.",
+          "Strong problem-solving and debugging skills."
+        ],
+        "BonusSkills": [
+          "Experience with drone/UAV flight control systems.",
+          "Knowledge of ArduPilot, PX4, or similar flight stacks.",
+          "Familiarity with MATLAB/Simulink for algorithm development.",
+          "Experience with wireless communication systems.",
+          "Understanding of safety-critical software development."
+        ]
+      },
+      "MechanicalDesignEngineer": {
+        "Header": "Mechanical Design Engineer",
+        "Category": "R&D",
+        "ExperienceRequired": "3-5 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Design and develop mechanical components and systems for our UAV platforms. You'll be responsible for creating innovative, lightweight, and durable designs that meet performance requirements while considering manufacturability and cost.",
+        "Responsibilities": [
+          "Design UAV airframes, mechanical components, and assembly systems.",
+          "Perform structural analysis and optimization using FEA tools.",
+          "Select appropriate materials and manufacturing processes.",
+          "Create detailed technical drawings and specifications.",
+          "Prototype and test mechanical designs.",
+          "Collaborate with manufacturing team on design for manufacturability.",
+          "Support product certification and regulatory compliance efforts (DGCA, BIS, WPC approvals).",
+          "Continuously improve existing designs based on field feedback."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Mechanical Engineering or Aerospace Engineering.",
+          "3-5 years of experience in mechanical design, preferably in aerospace or automotive.",
+          "Proficiency in 3D CAD software (SolidWorks, CATIA, or similar).",
+          "Experience with finite element analysis (FEA) tools.",
+          "Knowledge of materials science, particularly composites and lightweight structures.",
+          "Understanding of manufacturing processes (machining, molding, 3D printing).",
+          "Strong analytical and problem-solving skills.",
+          "Experience with product development lifecycle."
+        ],
+        "BonusSkills": [
+          "Experience in UAV, aircraft, or drone design.",
+          "Knowledge of aerodynamics and flight mechanics.",
+          "Familiarity with additive manufacturing and rapid prototyping.",
+          "Experience with design optimization and topology optimization tools.",
+          "Understanding of regulatory requirements for UAV design (DGCA, BIS standards).",
+          "Knowledge of Make in India initiatives and government drone policies."
+        ]
+      },
+      "PlantManager": {
+        "Header": "Plant Manager",
+        "Category": "Manufacturing",
+        "ExperienceRequired": "8-10 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Lead our manufacturing operations as Plant Manager, overseeing all aspects of UAV production from planning to delivery. You'll be responsible for managing teams, optimizing operations, ensuring quality, and scaling production to meet growing demand while maintaining safety and regulatory compliance.",
+        "Responsibilities": [
+          "Oversee day-to-day manufacturing operations and production scheduling.",
+          "Manage and develop cross-functional teams (production, quality, maintenance, logistics).",
+          "Drive operational excellence through lean manufacturing and continuous improvement.",
+          "Ensure compliance with safety regulations, quality standards, and DGCA requirements.",
+          "Develop and manage production budgets, cost control, and resource allocation.",
+          "Implement and maintain ERP/MES systems for production tracking.",
+          "Coordinate with supply chain for material planning and inventory management.",
+          "Lead vendor development and supplier quality management.",
+          "Establish and monitor KPIs for productivity, quality, safety, and delivery.",
+          "Support business growth by scaling manufacturing capacity and capabilities.",
+          "Manage regulatory inspections and audits (DGCA, BIS, factory inspections).",
+          "Drive digitalization initiatives and Industry 4.0 implementation."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Engineering (Mechanical, Production, Industrial preferred).",
+          "8-10 years of experience in manufacturing management, preferably in aerospace, electronics, or precision manufacturing.",
+          "Proven track record of managing multi-disciplinary teams (50+ people).",
+          "Strong knowledge of lean manufacturing, Six Sigma, and operational excellence.",
+          "Experience with ERP systems, production planning, and inventory management.",
+          "Knowledge of Indian labor laws, factory regulations, and compliance requirements.",
+          "Strong financial acumen for budget management and cost optimization.",
+          "Excellent leadership, communication, and problem-solving skills.",
+          "Experience in scaling manufacturing operations in startup/growth environments."
+        ],
+        "BonusSkills": [
+          "MBA or Master's in Operations Management.",
+          "Experience in aerospace, defense, or high-tech manufacturing.",
+          "Knowledge of automation, robotics, and smart manufacturing technologies.",
+          "Six Sigma Black Belt certification.",
+          "Experience with government/defense sector compliance and quality systems.",
+          "Knowledge of export procedures and international quality standards."
+        ]
+      },
+      "UAVAssemblyTechnician": {
+        "Header": "UAV Assembly Technician",
+        "Category": "Manufacturing",
+        "ExperienceRequired": "1-3 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Join our production team as a UAV Assembly Technician to build high-quality drones and components. You'll work with cutting-edge technology, follow precise assembly procedures, and contribute to India's growing drone manufacturing sector.",
+        "Responsibilities": [
+          "Assemble UAV airframes, electronic systems, and mechanical components according to technical drawings and work instructions.",
+          "Install and connect flight control systems, sensors, cameras, and communication modules.",
+          "Perform functional testing of assembled units and troubleshoot issues.",
+          "Maintain detailed assembly records and quality documentation.",
+          "Follow safety protocols and maintain clean, organized work areas.",
+          "Perform routine maintenance on assembly tools and equipment.",
+          "Collaborate with engineering teams to provide feedback on assembly processes.",
+          "Support quality inspections and participate in continuous improvement activities.",
+          "Handle materials and components with proper ESD precautions.",
+          "Meet daily production targets while maintaining quality standards."
+        ],
+        "Qualifications": [
+          "ITI/Diploma in Electronics, Mechanical, or related technical field.",
+          "1-3 years of experience in electronics assembly or mechanical assembly.",
+          "Basic understanding of electronic components and circuit boards.",
+          "Ability to read technical drawings, wiring diagrams, and assembly instructions.",
+          "Good manual dexterity and attention to detail.",
+          "Basic computer skills for data entry and production tracking.",
+          "Ability to work in shifts and meet production deadlines.",
+          "Strong commitment to quality and safety standards."
+        ],
+        "BonusSkills": [
+          "Experience in aerospace, automotive, or precision electronics assembly.",
+          "Knowledge of SMD soldering and cable harness assembly.",
+          "Familiarity with testing equipment (multimeters, oscilloscopes).",
+          "Basic knowledge of UAV/drone technology.",
+          "Certification in electronics assembly or quality control."
+        ]
+      },
+      "ElectronicsTechnician": {
+        "Header": "Electronics Technician",
+        "Category": "Manufacturing",
+        "ExperienceRequired": "2-4 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Support UAV production as an Electronics Technician, specializing in circuit board assembly, testing, and troubleshooting. You'll ensure electronic systems meet stringent quality standards and support new product development activities.",
+        "Responsibilities": [
+          "Assemble and test printed circuit boards (PCBs) for flight control and communication systems.",
+          "Perform SMD and through-hole soldering with high precision and quality.",
+          "Conduct electrical testing, calibration, and functional verification of electronic assemblies.",
+          "Troubleshoot and repair defective electronic components and assemblies.",
+          "Maintain and calibrate testing equipment and measurement instruments.",
+          "Document test results, maintain traceability records, and report quality issues.",
+          "Support prototype builds and new product introduction activities.",
+          "Follow ESD protocols and maintain clean room standards.",
+          "Train assembly technicians on electronics handling and basic testing procedures.",
+          "Collaborate with design engineers on testability and manufacturing improvements."
+        ],
+        "Qualifications": [
+          "Diploma in Electronics Engineering or related technical field.",
+          "2-4 years of experience in electronics assembly, testing, or repair.",
+          "Proficiency in SMD and through-hole soldering techniques.",
+          "Experience with electronic testing equipment (multimeters, power supplies, signal generators).",
+          "Knowledge of electronic components, circuit analysis, and troubleshooting.",
+          "Understanding of ESD precautions and clean room protocols.",
+          "Ability to read schematic diagrams and technical specifications.",
+          "Good analytical and problem-solving skills.",
+          "Attention to detail and quality consciousness."
+        ],
+        "BonusSkills": [
+          "IPC certification in soldering and electronics assembly.",
+          "Experience with RF testing and antenna measurements.",
+          "Knowledge of microcontrollers and embedded systems testing.",
+          "Familiarity with automated testing systems.",
+          "Experience in aerospace or defense electronics."
+        ]
+      },
+      "MaintenanceTechnician": {
+        "Header": "Maintenance Technician",
+        "Category": "Manufacturing",
+        "ExperienceRequired": "3-5 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Ensure optimal performance of our manufacturing equipment and facility infrastructure as a Maintenance Technician. You'll be responsible for preventive maintenance, troubleshooting, and continuous improvement of our production systems.",
+        "Responsibilities": [
+          "Perform preventive maintenance on production equipment, tools, and machinery.",
+          "Troubleshoot and repair mechanical, electrical, and pneumatic systems.",
+          "Maintain CNC machines, 3D printers, assembly equipment, and testing systems.",
+          "Develop and implement maintenance schedules and procedures.",
+          "Manage spare parts inventory and coordinate with suppliers.",
+          "Support installation and commissioning of new equipment.",
+          "Ensure compliance with safety regulations and conduct risk assessments.",
+          "Maintain maintenance records and equipment history databases.",
+          "Support continuous improvement initiatives to reduce downtime.",
+          "Train production staff on basic equipment operation and maintenance.",
+          "Coordinate with external service providers for specialized repairs."
+        ],
+        "Qualifications": [
+          "ITI in Mechanical/Electrical or Diploma in Engineering.",
+          "3-5 years of experience in industrial maintenance, preferably in manufacturing.",
+          "Knowledge of mechanical systems, hydraulics, pneumatics, and electrical systems.",
+          "Experience with CNC machines, automation equipment, or precision machinery.",
+          "Understanding of preventive maintenance principles and reliability engineering.",
+          "Ability to read technical manuals, electrical schematics, and mechanical drawings.",
+          "Strong troubleshooting and problem-solving skills.",
+          "Basic computer skills for maintenance management systems.",
+          "Commitment to safety protocols and procedures."
+        ],
+        "BonusSkills": [
+          "Experience in aerospace, automotive, or high-tech manufacturing maintenance.",
+          "Knowledge of PLCs, servo systems, and industrial automation.",
+          "Familiarity with 3D printing technology and additive manufacturing equipment.",
+          "Certification in specific equipment or maintenance methodologies.",
+          "Experience with CMMS (Computerized Maintenance Management Systems)."
+        ]
+      },
+      "StoresInventoryManager": {
+        "Header": "Stores/Inventory Manager",
+        "Category": "Manufacturing",
+        "ExperienceRequired": "4-6 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Manage our complete inventory ecosystem from raw materials to finished goods. You'll be responsible for optimizing inventory levels, managing supplier relationships, and ensuring smooth material flow to support uninterrupted production in our growing UAV manufacturing operations.",
+        "Responsibilities": [
+          "Manage end-to-end inventory operations including receiving, storage, and dispatch.",
+          "Develop and implement inventory management policies and procedures.",
+          "Optimize inventory levels to balance cost efficiency with production requirements.",
+          "Manage supplier relationships and coordinate material procurement schedules.",
+          "Implement and maintain inventory tracking systems (ERP/WMS integration).",
+          "Conduct regular cycle counts, physical inventory audits, and reconciliations.",
+          "Manage warehousing operations, layout optimization, and storage systems.",
+          "Coordinate with production planning for material requirements and scheduling.",
+          "Handle import/export documentation and customs clearance for international components.",
+          "Manage obsolete inventory, scrap disposal, and cost recovery initiatives.",
+          "Ensure compliance with storage requirements for sensitive electronic components.",
+          "Train and manage warehouse staff on inventory procedures and safety protocols."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Supply Chain Management, Operations, or related field.",
+          "4-6 years of experience in inventory management, preferably in manufacturing.",
+          "Proficiency in ERP systems (SAP, Oracle, Tally) and inventory management software.",
+          "Strong understanding of inventory optimization techniques and demand forecasting.",
+          "Knowledge of import/export procedures, customs documentation, and GST compliance.",
+          "Experience with vendor management and procurement processes.",
+          "Strong analytical skills for inventory analysis and reporting.",
+          "Knowledge of warehouse management systems and material handling equipment.",
+          "Understanding of electronic component storage requirements and ESD protocols."
+        ],
+        "BonusSkills": [
+          "Experience in aerospace, electronics, or high-tech manufacturing inventory.",
+          "Certification in supply chain management (APICS, CSCMP).",
+          "Knowledge of lean inventory principles and just-in-time manufacturing.",
+          "Experience with international sourcing and supplier development.",
+          "Familiarity with government procurement processes and documentation."
+        ]
+      },
+      "ProductionPlanningCoordinator": {
+        "Header": "Production Planning Coordinator",
+        "Category": "Manufacturing",
+        "ExperienceRequired": "3-5 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Drive efficient production scheduling and capacity planning to meet customer demands while optimizing resource utilization. You'll coordinate between sales, engineering, and manufacturing teams to ensure smooth production flow and on-time delivery of UAV products.",
+        "Responsibilities": [
+          "Develop and maintain master production schedules based on sales forecasts and customer orders.",
+          "Coordinate capacity planning and resource allocation across production lines.",
+          "Monitor production progress and adjust schedules to meet delivery commitments.",
+          "Interface with sales teams for order promising and delivery date confirmation.",
+          "Collaborate with procurement for material planning and supplier scheduling.",
+          "Manage work-in-progress tracking and production bottleneck resolution.",
+          "Generate production reports, KPIs, and performance metrics for management.",
+          "Coordinate with quality and engineering teams for production process improvements.",
+          "Plan workforce requirements and coordinate with HR for staffing needs.",
+          "Support new product introduction planning and prototype scheduling.",
+          "Manage customer change requests and production schedule modifications.",
+          "Implement and maintain production planning software and MRP systems."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Engineering, Operations Management, or related field.",
+          "3-5 years of experience in production planning, preferably in manufacturing.",
+          "Proficiency in ERP systems and production planning software (SAP PP, Oracle, etc.).",
+          "Strong understanding of manufacturing processes and capacity planning.",
+          "Knowledge of demand forecasting techniques and statistical analysis.",
+          "Experience with MRP/MPS planning and inventory management.",
+          "Excellent communication and coordination skills across multiple departments.",
+          "Strong analytical and problem-solving capabilities.",
+          "Understanding of lean manufacturing principles and waste reduction."
+        ],
+        "BonusSkills": [
+          "Experience in aerospace, electronics, or complex assembly manufacturing.",
+          "Knowledge of project management tools and methodologies.",
+          "Certification in production planning (APICS CPIM, CSCP).",
+          "Experience with advanced planning systems (APS) and optimization tools.",
+          "Familiarity with government contract manufacturing and compliance requirements."
+        ]
+      },
+      "SafetyOfficer": {
+        "Header": "Safety Officer",
+        "Category": "Others",
+        "ExperienceRequired": "5-7 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Establish and maintain comprehensive safety programs to protect our workforce and ensure regulatory compliance. You'll be responsible for creating a safety-first culture while supporting our manufacturing operations and ensuring compliance with Indian factory safety regulations.",
+        "Responsibilities": [
+          "Develop, implement, and maintain comprehensive safety policies and procedures.",
+          "Conduct regular safety inspections, audits, and risk assessments.",
+          "Investigate accidents, incidents, and near-misses; implement corrective actions.",
+          "Design and deliver safety training programs for all employees.",
+          "Ensure compliance with Factory Act, OSHA standards, and state factory regulations.",
+          "Manage safety documentation, permits, and regulatory reporting requirements.",
+          "Coordinate with external safety consultants and regulatory inspectors.",
+          "Implement emergency response procedures and conduct safety drills.",
+          "Monitor and maintain safety equipment, PPE inventory, and first aid facilities.",
+          "Chair safety committee meetings and promote safety awareness programs.",
+          "Manage environmental compliance including waste disposal and emissions.",
+          "Support facility design reviews for safety considerations in new installations."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Safety Engineering, Industrial Engineering, or related field.",
+          "5-7 years of experience in industrial safety, preferably in manufacturing.",
+          "Professional safety certifications (NEBOSH, IOSH, or equivalent Indian certifications).",
+          "Thorough knowledge of Indian Factory Act, state factory rules, and safety regulations.",
+          "Experience with safety management systems and incident investigation techniques.",
+          "Strong understanding of industrial hazards including chemical, electrical, and mechanical risks.",
+          "Knowledge of fire safety systems, emergency response planning, and evacuation procedures.",
+          "Excellent training and communication skills for safety program delivery.",
+          "Experience with safety auditing and regulatory compliance management."
+        ],
+        "BonusSkills": [
+          "Certification as a Chartered Safety Professional or equivalent.",
+          "Experience in aerospace, electronics, or high-tech manufacturing safety.",
+          "Knowledge of international safety standards (ISO 45001, OHSAS 18001).",
+          "Experience with contractor safety management and vendor safety audits.",
+          "Familiarity with environmental management systems and sustainability programs."
+        ]
+      },
+      "TrainingCoordinator": {
+        "Header": "Training Coordinator",
+        "Category": "Others",
+        "ExperienceRequired": "3-5 years",
+        "Location": "On-site",
+        "EmploymentType": "Full-time",
+        "Description": "Develop and manage comprehensive training programs to build technical capabilities, ensure safety compliance, and support career development across our growing UAV manufacturing team. You'll be instrumental in building a skilled workforce and maintaining high standards of competency.",
+        "Responsibilities": [
+          "Design and implement technical training programs for manufacturing processes and UAV technology.",
+          "Develop onboarding programs for new employees across all departments.",
+          "Coordinate safety training, regulatory compliance training, and certification programs.",
+          "Create training materials, manuals, and e-learning content.",
+          "Manage external training partnerships with institutes, vendors, and certification bodies.",
+          "Assess training needs through skills gap analysis and performance reviews.",
+          "Design apprenticeship programs and skill development initiatives.",
+          "Coordinate with government skill development programs and subsidies (PMKVY, etc.).",
+          "Maintain training records, certifications, and compliance documentation.",
+          "Measure training effectiveness through assessments and performance metrics.",
+          "Support cross-training initiatives and multi-skilling programs.",
+          "Organize technical workshops, seminars, and knowledge sharing sessions."
+        ],
+        "Qualifications": [
+          "Bachelor's degree in Engineering, HR, Training & Development, or related field.",
+          "3-5 years of experience in technical training, preferably in manufacturing.",
+          "Strong understanding of adult learning principles and training methodologies.",
+          "Experience in curriculum development and instructional design.",
+          "Knowledge of manufacturing processes, quality systems, and safety protocols.",
+          "Proficiency in training tools, LMS systems, and e-learning platforms.",
+          "Excellent presentation, communication, and facilitation skills.",
+          "Understanding of Indian skill development ecosystem and government schemes.",
+          "Experience with competency assessment and certification programs."
+        ],
+        "BonusSkills": [
+          "Certification in training and development (CTD, CPLP, or similar).",
+          "Experience in aerospace, electronics, or high-tech manufacturing training.",
+          "Knowledge of international training standards and best practices.",
+          "Experience with digital training tools, VR/AR training applications.",
+          "Familiarity with apprenticeship programs and vocational education systems.",
+          "Understanding of drone/UAV technology and applications."
         ]
       }
     }
@@ -644,7 +1193,7 @@
     },
     "termsAndConditions": "Terms & Conditions",
     "privacyPolicy": "Privacy Policy",
-    "copyright": "© 2024 Copyrights by Maviyom Aviation"
+    "copyright": "© 2025 Copyrights by Maviyom Aviation"
   },
   "TermsAndConditionsPage": {
     "title": "Terms and Conditions",

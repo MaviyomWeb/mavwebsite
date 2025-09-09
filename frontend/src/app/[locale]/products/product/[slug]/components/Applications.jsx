@@ -11,7 +11,7 @@ const Applications = ({ data: product, locale }) => {
               {product?.applications?.applications?.map((usage, index) => {
                 return (
                   <li
-                    className="flex items-center  bg-[#e8f0fdab] p-2 rounded-md  gap-3"
+                    className="flex items-center      bg-[#e8f0fdab] p-2 rounded-md  gap-3"
                     key={index}
                   >
                     <svg

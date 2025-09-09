@@ -33,7 +33,7 @@ const Career = () => {
 
   return (
     <div className="relative w-full bg-gray-50">
-      <section className="relative h-72 md:h-[200px] overflow-hidden">
+      <section className="relative h-[150px] md:h-[200px] overflow-hidden">
         <Image
           src="/payload-hero-banner.webp"
           alt="Career"
@@ -42,7 +42,7 @@ const Career = () => {
           className="z-0"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-          <h2 className="text-white text-4xl md:text-6xl font-bold text-center">
+          <h2 className="text-white text-[30px] leading-[35px] sm:text-[60px] sm:leading-[65px] font-bold text-center">
             {t("Banner")}
           </h2>
         </div>
@@ -50,7 +50,7 @@ const Career = () => {
 
       <section className="py-10">
         <Container>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 mb-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-6 gap-4 mb-10">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -58,7 +58,7 @@ const Career = () => {
                   setSelectedCategory(cat);
                   setOpenIndex(null); 
                 }}
-                className={`px-4 py-3 rounded-lg text-center font-semibold transition ${
+                className={`px-4 py-3 rounded-lg text-center text-[14px] leading-[20px] sm:text-[18px] sm:leading-[20px] font-semibold transition ${
                   selectedCategory === cat
                     ? "bg-[#0D0C22] text-white hover:bg-[#0D0C22]"
                     : "bg-[#1d69e7] text-white shadow-md "

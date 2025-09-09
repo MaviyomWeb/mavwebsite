@@ -157,6 +157,35 @@
     "description": "Connect with us today for comprehensive information and expert guidance on revolutionizing your drone experience."
   },
   "AboutPage": {
+    "heading": "Our Team",
+     "team_section": {
+      "title": "The Team of Maviyom is a PEARL",
+      "list": [
+        "Passion Driven Core Team",
+        "Educated Directors",
+        "Advisors from Multi Skills and Disciplines",
+        "Realistic Approach",
+        "Learned Workforce"
+      ],
+      "table_headers": {
+        "s_no": "S. NO.",
+        "parameters": "PARAMETERS",
+        "core": "CORE",
+        "board": "BOARD",
+        "advisors": "ADVISORS"
+      },
+      "quickFacts": [
+        { "no": 1, "parameter": "Average Age", "core": "25", "board": "40+", "advisors": "40+" },
+        { "no": 2, "parameter": "Average Experience", "core": "2+", "board": "15+", "advisors": "25+" },
+        { "no": 3, "parameter": "Average Educational Qualification", "core": "Masters", "board": "Masters", "advisors": "Professionals" }
+      ],
+      "leadershipLinks": [
+        { "title": "Founders", "href": "/about-us/founder" },
+        { "title": "Directors", "href": "/about-us/director" },
+        { "title": "Advisors", "href": "/about-us/advisor" },
+        { "title": "Leaders", "href": "/about-us/leader" }
+      ]
+    },
     "about_company": {
       "section_title": "About Company",
       "headline": "Maviyom Aviation: Elevating Innovation",

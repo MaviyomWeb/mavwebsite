@@ -16,10 +16,10 @@ const AboutCompany = () => {
       <Container>
         <>
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-[2.5rem] text-[#152432] text-center font-semibold leading-[1.45]">
+            <h2 className="text-[30px] leading-[35px] xs:text-[36px] sm:text-[45px] sm:leading-[50px] text-[#152432] text-center font-semibold leading-[1.45] pt-10">
               {t("title")}
             </h2>
-            <p className=" text-[#5d6165] text-center text-base leading-5 mt-2 ">
+            <p className=" text-[#5d6165] text-center text-base leading-5 mt-2 text-[16px] leading-[20px] sm:text-[20px] sm:leading-[20px]">
               {t("subtitle")}
             </p>
 
@@ -30,10 +30,10 @@ const AboutCompany = () => {
             </div>
             <div className="relative mt-4 md:mt-8 grid   max-w-[1250px] gap-2 md:gap-5  lg:mx-auto lg:grid-cols-2 lg:gap-40">
               <div className="content grid  gap-2 md:gap-5 pb-10 ">
-                <h3 className="text-[26px]  md:text-3xl lg:text-4xl font-bold text-[#1b243f]">
+                <h3 className="text-[22px]  md:text-3xl lg:text-4xl font-bold text-[#1b243f]">
                   {t("pledge.title")}
                 </h3>
-                <p className="text-lg md:text-base my-2 md:my-0 text-gray-800  ">
+                <p className="text-[15px] leading-[20px] sm:text-[20px] sm:leading-[20px] md:text-base my-2 md:my-0 text-gray-800  ">
                   {t.rich("pledge.description", {
                     span: (chunks) => <span className="block">{chunks}</span>,
                   })}
@@ -46,7 +46,7 @@ const AboutCompany = () => {
                         <span>
                           <IoIosCheckmarkCircle className="text-2xl font-bold fill-primary" />
                         </span>
-                        <p className="font-medium text-secondary text-lg md:text-base">
+                        <p className="font-medium text-secondary  md:text-base text-[15px] leading-[20px] sm:text-[20px] sm:leading-[20px] ">
                           {t(`benefits.${benefit}.benefit`)}
                         </p>
                       </li>

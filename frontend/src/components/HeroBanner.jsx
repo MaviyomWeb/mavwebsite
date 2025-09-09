@@ -5,8 +5,8 @@ const HeroBanner = () => {
   const t = useTranslations("HomePage.HeroBanner");
 
   return (
-    <section className="relative isolate z-0 px-6 pt-10 bg-white lg:px-8 pb-10 md:pb-10">
-      <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+    <section className="relative isolate z-0 px-6 md:px-10 lg:px-8 bg-white pt-[3rem] pb-[3rem] md:pt-[4rem] md:pb-[4rem]">
+      <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center gap-10">
 
         {/* Image Column (Left Side) */}
         <div className="flex justify-center md:justify-center">
@@ -19,16 +19,16 @@ const HeroBanner = () => {
 
         {/* Text Column (Right Side) */}
         <div className="text-center md:text-left">
-          <h1 className="font-semibold tracking-tight text-secondary text-3xl xs:text-[36px] sm:text-[48px] leading-[1.1] font-poppins">
+          <h1 className="font-semibold tracking-tight text-secondary text-[30px] leading-[35px] xs:text-[36px] sm:text-[45px] sm:leading-[50px] leading-[1.1] font-poppins">
             {t("title")}
           </h1>
-          <p className="mt-4 text-lg md:leading-8 text-gray-600">
+          <p className="mt-4 text-[16px] leading-[20px] sm:text-[20px] sm:leading-[20px] md:leading-8 text-gray-600">
             {t("subtitle")}
           </p>
           <div className="mt-6 flex items-center justify-center md:justify-start gap-x-4">
             <Link
               href="/products"
-              className="inline-flex whitespace-nowrap text-secondary text-lg border-2 border-secondary hover:text-white hover:bg-secondary font-medium font-poppins px-6 py-3 rounded-full transition-all ease-in-out duration-200"
+              className="inline-flex whitespace-nowrap text-secondary text-[15px] leading-[20px] sm:text-[20px] sm:leading-[25px] border-2 border-secondary hover:text-white hover:bg-secondary font-medium font-poppins px-6 py-3 rounded-full transition-all ease-in-out duration-200"
             >
               {t("explore")}
             </Link>

@@ -23,17 +23,17 @@
           </div>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4  ">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4  ">
           {teamMembers.map((member) => {
             const data = message.AboutPage.leader_section.members[member];
             return (
               <div
                 key={member}
-                className="bg-white shadow-md rounded-lg overflow-hidden  transition-shadow duration-300 rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.15)]"
+                className="bg-white shadow-[0_0_20px_rgba(0,0,0,0.15)] rounded-lg overflow-hidden  transition-shadow duration-300"
               >
                 {/* Image */}
-                <div className="p-10"> {/* 20px padding */}
-                  <div className="relative w-full h-64 ">
+                <div className="p-2">
+                  <div className="relative w-full aspect-[413/531]  ">
                     <Image
                       src={data.imageSrc}
                       alt={data.name}

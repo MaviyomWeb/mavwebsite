@@ -87,7 +87,7 @@ const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
       <button
         // onClick={() => setIsOpen(!isOpen)}
         onClick={onToggle}
-        className="w-full text-left px-6 py-4  transition text-xl font-semibold text-[#0D0C22] flex justify-between items-center ${
+        className="w-full text-left px-6 py-4  transition text-[16px] leading-[20px] sm:text-[20px] font-semibold text-[#0D0C22] flex justify-between items-center ${
     isOpen ? 'bg-white' : 'bg-gray-100 hover:bg-gray-200'"
       >
         <span>{careerData.Header}</span>
@@ -106,14 +106,14 @@ const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
               <p><span className="font-semibold">Employment Type:</span> {careerData.EmploymentType}</p>
 
               <h4 className="font-semibold text-lg mt-4">Job Summary</h4>
-              <p>{careerData.Description}</p>
+              <p className="text-[14px] leading-[17px] sm:text-[16px] sm:leading-[20px]">{careerData.Description}</p>
             </div>
           </section>
           <div>
             <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Key Responsibilities</h4>
             <ul className="list-disc pl-5 space-y-1">
               {careerData.Responsibilities.map((item, index) => (
-                <li key={index}>{formatWithLineBreaks(item)}</li>
+                <li className="text-[14px] leading-[17px] sm:text-[16px] sm:leading-[20px]" key={index}>{formatWithLineBreaks(item)}</li>
               ))}
             </ul>
           </div>
@@ -122,16 +122,16 @@ const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
             <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Qualifications</h4>
             <ul className="list-disc pl-5 space-y-1">
               {careerData.Qualifications.map((item, index) => (
-                <li key={index}>{formatWithLineBreaks(item)}</li>
+                <li className="text-[14px] leading-[17px] sm:text-[16px] sm:leading-[20px]" key={index}>{formatWithLineBreaks(item)}</li>
               ))}
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold uppercase text-[#1d69e7] mb-2">Bonus / Preferred Skills</h4>
-            <ul className="text-gray-800 pb-5 text-lg xs:text-lg md:text-base list-disc pl-5 space-y-1">
+            <ul className="list-disc pl-5 space-y-1">
               {careerData.BonusSkills.map((item, index) => (
-                <li key={index}>{formatWithLineBreaks(item)}</li>
+                <li className="text-[14px] leading-[17px] sm:text-[16px] sm:leading-[20px]" key={index}>{formatWithLineBreaks(item)}</li>
               ))}
             </ul>
           </div>
@@ -156,7 +156,7 @@ const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="bg-white rounded-xl p-4 sm:p-6 md:p-8 w-[95%] sm:w-full max-w-lg space-y-4 relative overflow-y-auto max-h-[90vh]"
+            className="bg-white rounded-xl py-4 px-[25px] sm:py-6 sm:px-[30px] md:py-8 md:px-[40px] w-[95%] sm:w-full max-w-lg space-y-4 relative overflow-y-auto max-h-[90vh]"
             onClick={(e) => e.stopPropagation()}
           >
             {successMessage ? (
@@ -165,7 +165,7 @@ const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
               </div>
             ) : (
               <>
-                <h2 className="text-center text-3xl text-secondary font-bold">Apply for Position</h2>
+                <h2 className="text-center text-[25px] leading-[30px] xs:text-[36px] sm:text-[40px] sm:leading-[45px] text-secondary font-bold">Apply for Position</h2>
 
                 {errorMessage && (
                   <div className="bg-red-500 text-white py-4 px-8 rounded-md text-center mb-6">
@@ -178,7 +178,7 @@ const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
                   name="from_name"
                   placeholder="Name"
                   required
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-8 md:h-10 lg:h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   onChange={handleChange}
                 />
                 <input
@@ -186,7 +186,7 @@ const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
                   name="from_email"
                   placeholder="Email"
                   required
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-8 md:h-10 lg:h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   onChange={handleChange}
                 />
                 <input
@@ -194,14 +194,14 @@ const CareerItem = ({ careerKey, t, messages, isOpen, onToggle }) => {
                   name="from_phone"
                   placeholder="Phone Number"
                   required
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-8 md:h-10 lg:h-10 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   onChange={handleChange}
                 />
                 <textarea
                   name="from_message"
                   placeholder="About Yourself (max 500 characters)"
                   maxLength={500}
-                  className="h-24 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+                  className="h-18 md:h-24 lg:h-24 w-full rounded-md border border-gray-300 bg-white text-black px-3 py-2 md:text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
                   onChange={handleChange}
                 />
                 <input

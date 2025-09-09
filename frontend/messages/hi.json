@@ -157,6 +157,36 @@
     "description": "आज ही हमसे जुड़ें और अपने ड्रोन अनुभव को क्रांतिकारी बनाने के लिए व्यापक जानकारी और विशेषज्ञ मार्गदर्शन प्राप्त करें।"
   },
   "AboutPage": {
+    "heading": "हमारी टीम",
+    "team_section": {
+       
+  "title": "मावियॉम की टीम एक मोती है",
+  "list": [
+    "जज़्बा-प्रेरित कोर टीम",
+    "शिक्षित निदेशक",
+    "विविध कौशल और क्षेत्रों के सलाहकार",
+    "वास्तविक दृष्टिकोण",
+    "संगठित कार्यबल"
+  ],
+  "table_headers": {
+    "s_no": "क्रम संख्या",
+    "parameters": "पैरामीटर",
+    "core": "कोर",
+    "board": "बोर्ड",
+    "advisors": "सलाहकार"
+  },
+  "quickFacts": [
+    { "no": 1, "parameter": "औसत आयु", "core": "25", "board": "40+", "advisors": "40+" },
+    { "no": 2, "parameter": "औसत अनुभव", "core": "2+", "board": "15+", "advisors": "25+" },
+    { "no": 3, "parameter": "औसत शैक्षणिक योग्यता", "core": "मास्टर्स", "board": "मास्टर्स", "advisors": "प्रोफेशनल्स" }
+  ],
+  "leadershipLinks": [
+    { "title": "संस्थापक", "href": "/about-us/founder" },
+    { "title": "निदेशक", "href": "/about-us/director" },
+    { "title": "सलाहकार", "href": "/about-us/advisor" },
+    { "title": "नेता", "href": "/about-us/leader" }
+  ]
+},
     "about_company": {
       "section_title": "कंपनी के बारे में",
       "headline": "मावियोम एविएशन: नवाचार को बढ़ावा देना",

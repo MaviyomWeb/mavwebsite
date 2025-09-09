@@ -9,7 +9,6 @@ export default function Home({ params }) {
   return (
     <>
       <HeroBanner />
-      {/**Uncomment it after making design**/}
       <OurProducts1 locale={locale} />
       <Specs />
       <AboutCompany />

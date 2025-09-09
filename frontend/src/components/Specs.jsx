@@ -19,14 +19,14 @@ const Specs = () => {
         <Container>
           <div className=" mx-auto  grid  sm:grid-cols-service-sm xl:grid-cols-3 2xl:grid-cols-service-2xl gap-2 xs:gap-6 xl:gap-[35px]   md:items-start  ">
             <div className="title-wrapper xl:col-span-3 2xl:col-auto  xl:pr-[100px] 2xl:pr-0">
-              <p className="section-subtitle font-medium uppercase text-[#1d69e7]">
+              <p className="section-subtitle font-medium uppercase text-[#1d69e7] text-[18px] leading-[20px] sm:text-[20px] sm:leading-[20px]">
                 {t("subtitle")}
               </p>
 
-              <h2 className="h2 title section-title my-3 lg:mt-2 lg:mb-2 xl:mb-2 2xl:my-3 text-secondary text-[36px] sm:text-3xl md:text-4xl lg:text-4xl    font-semibold ">
+              <h2 className="h2 title section-title my-3 lg:mt-2 lg:mb-2 xl:mb-2 2xl:my-3 text-secondary      font-semibold  text-[30px] leading-[35px] xs:text-[36px] sm:text-[45px] sm:leading-[50px] leading-[1.1] font-poppins ">
                 {t("title")}
               </h2>
-              <p className="section-text text-lg xs:text-base text-[#5d6165]  mb-5 xl:mb-3  leading-7">
+              <p className="section-text  xs:text-base text-[#5d6165]  mb-5 xl:mb-3  leading-7 text-[16px] leading-[20px] sm:text-[20px] sm:leading-[20px]">
                 {t("description")}
               </p>
             </div>

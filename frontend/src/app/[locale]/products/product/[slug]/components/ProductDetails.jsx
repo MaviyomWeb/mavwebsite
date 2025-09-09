@@ -23,16 +23,26 @@ const ProductDetails = ({ data: product, locale }) => {
     null;
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-10">
+    <div className="max-w-7xl mx-auto px-0 md:px-6 py-0">
 
       {/* ✅ First Row: Product Image + Title + Description (2 Columns) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-10">
+
+        {/* Right Column: Product Title + Description */}
+        <div className="text-left md:text-left lg:order-2">
+          <h2 className="text-3xl md:text-4xl text-secondary font-dmSans font-semibold mb-4">
+            {product?.title}
+          </h2>
+          <p className="text-[14px] md:text-lg text-[#4d535e] leading-relaxed  ">
+            {product?.description}
+          </p>
+        </div>
 
         {/* Left Column: Product Image */}
         {imageUrl && (
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start lg:order-1">
             <Image
-              className="rounded-lg shadow-md object-cover"
+              className="border border-gray-300 rounded-lg shadow-lg object-cover"
               src={imageUrl}
               alt={product?.title || "Product Image"}
               width={600}
@@ -41,26 +51,18 @@ const ProductDetails = ({ data: product, locale }) => {
           </div>
         )}
 
-        {/* Right Column: Product Title + Description */}
-        <div className="text-left md:text-left">
-          <h2 className="text-3xl md:text-4xl text-secondary font-dmSans font-semibold mb-4">
-            {product?.title}
-          </h2>
-          <p className="text-lg text-[#4d535e] leading-relaxed  ">
-            {product?.description}
-          </p>
-        </div>
+        
       </div>
 
       {/* ✅ Second Row: Specifications + Applications (2 Columns) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
 
         {/* Left Column → Specifications */}
-        <div>
-          <h2 className="text-3xl md:text-4xl text-secondary font-dmSans font-semibold mb-5">
+        <div className="mt-8 md:mt-16 md:px-4 w-full max-w-md sm:max-w-4xl  mx-auto pb-10 md:pb-0">
+          <h2 className="text-[30px] leading-[35px] xs:text-[36px] sm:text-[45px] sm:leading-[50px] text-secondary  font-dmSans  md:leading-5 font-medium text-center mb-4 md:mb-8">
             {specifications}
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-1 gap-6">
             <DroneSpecsTable specs={product?.specifications?.droneSpecs || []} />
           </div>
         </div>

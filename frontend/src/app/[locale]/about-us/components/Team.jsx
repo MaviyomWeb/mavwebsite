@@ -18,7 +18,7 @@ const Team = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
 
         <div className="bg-white rounded-lg p-4 sm:p-6 lg:p-10 col-span-12 md:col-span-8 shadow-[0_0_20px_rgba(0,0,0,0.15)]">
-          <h2 className="text-[22px] leading-[25px] xs:text-[36px] sm:text-[32px] sm:leading-[50px] font-bold text-secondary mb-4 sm:mb-6 text-center md:text-left">
+          <h2 className="text-[22px] leading-[30px] md:text-[32px] sm:leading-[35px] font-bold text-secondary mb-4 sm:mb-6 text-center md:text-left">
             {title}
           </h2>
 

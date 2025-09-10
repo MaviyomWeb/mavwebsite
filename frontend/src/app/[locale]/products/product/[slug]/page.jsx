@@ -49,7 +49,7 @@ const Product = async ({ params }) => {
 
       {/* VTOL */}
 
-      {productAllDetails?.payload_image && (
+      {/* {productAllDetails?.payload_image && (
         <div className="content md:w-9/12 md:mx-auto mt-10">
           <Payload
             data={product}
@@ -57,7 +57,7 @@ const Product = async ({ params }) => {
             productAllDetails={productAllDetails}
           />
         </div>
-      )}
+      )} */}
 
       <Container>
         {/* <Applications data={product} locale={locale} /> */}

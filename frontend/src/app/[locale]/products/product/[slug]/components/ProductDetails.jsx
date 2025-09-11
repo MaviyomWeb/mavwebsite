@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import DroneSpecsTable from "@/components/DroneSpecsTable";
 import Applications from "./Applications";  // Import Applications here

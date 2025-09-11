@@ -42,7 +42,7 @@ const ProductDetails = ({ data: product, locale }) => {
         {imageUrl && (
           <div className="flex justify-center md:justify-start lg:order-1">
             <Image
-              className="border rounded-lg shadow-lg object-cover py-10 px-6" style="border-color: #0f172a;"
+              className="border rounded-lg shadow-lg object-cover py-10 px-6"
               src={imageUrl}
               alt={product?.title || "Product Image"}
               width={600}

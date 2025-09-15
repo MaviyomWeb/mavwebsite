@@ -9,13 +9,13 @@ const About = () => {
       {/* Hero Section */}
             <section className="relative h-[150px] md:h-[200px] overflow-hidden">
               <Image
-                src="/payload-hero-banner.webp" 
+                src="/founder-hero-banner.jpg" 
                 alt="About Company"
                 layout="fill"
                 objectFit="cover"
                 className="z-0"
               />
-              <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center justify-center">
                 <h2 className="text-white text-[30px] leading-[35px] sm:text-[60px] sm:leading-[65px] font-bold text-center">
                   {t("")} {/* e.g., "About Our Company" */}
                 </h2>

@@ -16,6 +16,17 @@ const HeroBanner = () => {
             className="w-full rounded-lg shadow-lg"
           />
         </div>
+        {/* <video
+  src="/drone-video.mp4"  // Replace with your video path
+  className="w-full rounded-lg shadow-lg"
+  autoPlay
+  loop
+  muted
+  playsInline
+>
+  Your browser does not support the video tag.
+</video> */}
+
 
         {/* Text Column (Right Side) */}
         <div className="text-center md:text-left">

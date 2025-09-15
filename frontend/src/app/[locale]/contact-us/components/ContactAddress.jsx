@@ -45,7 +45,7 @@ const ContactAddress = ({ t }) => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row md:flex-col space-y-5 sm:space-y-0 md:space-y-7 mt-0 md:mt-14">
+            <div className="flex flex-col sm:flex-row md:flex-col space-y-5 sm:space-y-0 md:space-y-7 ">
               <div className="flex flex-row items-center gap-4">
                 <div className="h-10 md:h-12 lg:h-14 w-10 md:w-12 lg:w-14 flex items-center justify-center text-white bg-secondary rounded-full">
                   <HiOutlineEnvelope className="text-2xl md:text-[27px] lg:text-3xl" />

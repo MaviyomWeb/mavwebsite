@@ -35,13 +35,13 @@ const Career = () => {
     <div className="relative w-full bg-gray-50">
       <section className="relative h-[150px] md:h-[200px] overflow-hidden">
         <Image
-          src="/payload-hero-banner.webp"
+          src="/carrer-hero-banner.jpg"
           alt="Career"
           layout="fill"
           objectFit="cover"
           className="z-0"
         />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center">
           <h2 className="text-white text-[30px] leading-[35px] sm:text-[60px] sm:leading-[65px] font-bold text-center">
             {t("Banner")}
           </h2>

@@ -9,7 +9,7 @@ export default function Home({ params }) {
   return (
     <>
       <HeroBanner />
-      {/* <OurProducts1 locale={locale} /> */}
+      <OurProducts1 locale={locale} />
       <Specs />
       <AboutCompany />
       {/* <Blogs locale={locale} /> */}

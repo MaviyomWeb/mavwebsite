@@ -247,22 +247,22 @@
       "title": "Founders",
       "members": {
         "cto": {
-          "name": "AKSHAY VERMA",
+          "name": "Akshay Verma",
           "description": "AI Specialist with experience in leading AI integration and software development for UAV systems, and former AI Engineer at a leading Indian computer vision startup.",
           "imageSrc": "/akshay-verma.jpg"
         },
         "coo": {
-          "name": "BRIJESH SHARMA",
+          "name": "Brijesh Sharma",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and operational expert skilled in streamlining manufacturing processes and ensuring top-quality standards.",
           "imageSrc": "/brijesh-sharma.jpg"
         },
         "ceo": {
-          "name": "MRIDUL AGGARWAL",
+          "name": "Mridul Aggarwal",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) with expertise in blending technical skills and business insight to lead innovation and drive sustainable growth.",
           "imageSrc": "/mridul-aggarwal.jpg"
         },
         "cro": {
-          "name": "SHAURYA SINGH RAWAT",
+          "name": "Shaurya Singh Rawat",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and research lead specializing in advanced aerodynamics and aerospace AI innovation.",
           "imageSrc": "/shaurya.jpg"
         }
@@ -272,22 +272,22 @@
       "title": "Directors",
       "members": {
         "cto": {
-          "name": "AKSHAY VERMA",
+          "name": "Akshay Verma",
           "description": "AI Specialist with experience in leading AI integration and software development for UAV systems, and former AI Engineer at a leading Indian computer vision startup.",
           "imageSrc": "/akshay-verma.jpg"
         },
         "director": {
-          "name": "JYOTSANA ARYA",
+          "name": "Jyotsana Arya",
           "description": "Over 25 years of expertise in manufacturing, driving efficiency, quality, and innovation across diverse industrial operations.",
           "imageSrc": "/jyotisana-aray.jpg"
         },
         "chairman": {
-          "name": "MANMOHAN AGGARWAL",
+          "name": "Manmohan Aggarwal",
           "description": "Mr. Aggarwal brings 27+ years of strategic leadership and market expertise across industries. His vision and network drive Maviyom’s growth and scale.",
           "imageSrc": "/manmohan-aggarwal.jpg"
         },
         "ceo": {
-          "name": "MRIDUL AGGARWAL",
+          "name": "Mridul Aggarwal",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) with expertise in blending technical skills and business insight to lead innovation and drive sustainable growth.",
           "imageSrc": "/mridul-aggarwal.jpg"
         }
@@ -297,27 +297,27 @@
       "title": "Advisors",
       "members": {
         "advisor1": {
-          "name": "BHAGWAN GORTI",
+          "name": "Bhagwan Gorit",
           "description": "Business Softech Advisor"
         },
         "advisor2": {
-          "name": "JITEN SHAH",
+          "name": "Jiten Shah",
           "description": "Director, World Bank Advisor (Mozambique Operations)"
         },
         "advisor3": {
-          "name": "LT. CMDR. ASHUTOSH MOHANTEY (RETD.)",
+          "name": "LT. CMDR. Ashutosh Mohantey (RETD.)",
           "description": "Business Development Advisor"
         },
         "advisor4": {
-          "name": "M. S. CHAUHAN",
+          "name": "M. S. Chauhan",
           "description": "Business Development Advisor"
         },
         "advisor5": {
-          "name": "PARUL AGARWAL",
+          "name": "Parul Aggarwal",
           "description": "Chartered Accountant with 25+ years’ experience driving financial strategy, compliance, and investments for sustainable growth."
         },
         "advisor6": {
-          "name": "RADHEY SHYAM VERMA",
+          "name": "Radhey Shyam Verma",
           "description": "Board Advisor-Head of Finance, SOS Angola"
         }
       }
@@ -326,31 +326,31 @@
       "title": "Leaders",
       "members": {
         "cto": {
-          "name": "AKSHAY VERMA",
+          "name": "Akshay Verma",
           "role": "CTO",
           "description": "AI Specialist with experience in leading AI integration and software development for UAV systems, and former AI Engineer at a leading Indian computer vision startup.",
           "imageSrc": "/akshay-verma.jpg"
         },
         "coo": {
-          "name": "BRIJESH SHARMA",
+          "name": "Brijesh Sharma",
           "role": "COO",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and operational expert skilled in streamlining manufacturing processes and ensuring top-quality standards.",
           "imageSrc": "/brijesh-sharma.jpg"
         },
         "ceo": {
-          "name": "MRIDUL AGGARWAL",
+          "name": "Mridul Aggarwal",
           "role": "CEO",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) with expertise in blending technical skills and business insight to lead innovation and drive sustainable growth.",
           "imageSrc": "/mridul-aggarwal.jpg"
         },
         "director": {
-          "name": "PARUL AGARWAL",
+          "name": "Parul Aggarwal",
           "role": "CFO",
           "description": "Chartered Accountant with 25+ years’ experience driving financial strategy, compliance, and investments for sustainable growth.",
           "imageSrc": "/parul-aggarwal.jpg"
         },
         "cro": {
-          "name": "SHAURYA SINGH RAWAT",
+          "name": "Shaurya Singh Rawat",
           "role": "CRDO",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and research lead specializing in advanced aerodynamics and aerospace AI innovation.",
           "imageSrc": "/shaurya.jpg"

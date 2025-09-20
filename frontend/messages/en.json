@@ -297,7 +297,7 @@
       "title": "Advisors",
       "members": {
         "advisor1": {
-          "name": "Bhagwan Gorit",
+          "name": "Bhagwan Gorti",
           "description": "Business Softech Advisor"
         },
         "advisor2": {
@@ -305,7 +305,7 @@
           "description": "Director, World Bank Advisor (Mozambique Operations)"
         },
         "advisor3": {
-          "name": "LT. CMDR. Ashutosh Mohantey (RETD.)",
+          "name": "Lt. Cmdr. Asutosh Mohanty (Retd.)",
           "description": "Business Development Advisor"
         },
         "advisor4": {
@@ -313,7 +313,7 @@
           "description": "Business Development Advisor"
         },
         "advisor5": {
-          "name": "Parul Aggarwal",
+          "name": "Parul Agarwal",
           "description": "Chartered Accountant with 25+ years’ experience driving financial strategy, compliance, and investments for sustainable growth."
         },
         "advisor6": {
@@ -344,7 +344,7 @@
           "imageSrc": "/mridul-aggarwal.jpg"
         },
         "director": {
-          "name": "Parul Aggarwal",
+          "name": "Parul Agarwal",
           "role": "CFO",
           "description": "Chartered Accountant with 25+ years’ experience driving financial strategy, compliance, and investments for sustainable growth.",
           "imageSrc": "/parul-aggarwal.jpg"

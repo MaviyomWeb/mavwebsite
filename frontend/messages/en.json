@@ -304,17 +304,21 @@
           "name": "Jiten Shah",
           "description": "Director, World Bank Advisor (Mozambique Operations)"
         },
-        "advisor4": {
+        "advisor3": {
           "name": "M. S. Chauhan",
           "description": "Business Development Advisor"
         },
-        "advisor5": {
+        "advisor4": {
           "name": "Parul Agarwal",
           "description": "Chartered Accountant with 25+ years’ experience driving financial strategy, compliance, and investments for sustainable growth."
         },
-        "advisor6": {
+        "advisor5": {
           "name": "Radhey Shyam Verma",
           "description": "Board Advisor-Head of Finance, SOS Angola"
+        },
+        "advisor6": {
+          "name": "Sanjeev Kumar",
+          "description": "Vice President Driving Strategic Growth, Partnerships and Business Development"
         }
       }
     },
@@ -350,12 +354,6 @@
           "role": "CRDO",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and research lead specializing in advanced aerodynamics and aerospace AI innovation.",
           "imageSrc": "/shaurya.jpg"
-        },
-        "VP": {
-          "name": "Sanjeev Kumar",
-          "role": "VP",
-          "description": "Vice President, Business Development, specializing in strategic growth, business partnerships, client relations, and driving new business opportunities across diverse markets.",
-          "imageSrc": "/sanjeev.jpg"
         }
       }
     }

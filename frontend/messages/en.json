@@ -265,6 +265,11 @@
           "name": "Shaurya Singh Rawat",
           "description": "M.Sc. Aerospace Computational Engineering (Cranfield, UK) and research lead specializing in advanced aerodynamics and aerospace AI innovation.",
           "imageSrc": "/shaurya.jpg"
+        },
+        "vp": {
+          "name": "Sanjeev Kumar",
+          "description": "Vice President, Business Development, specializing in strategic growth, business partnerships, client relations, and driving new business opportunities across diverse markets.",
+          "imageSrc": "/sanjeev.jpg"
         }
       }
     },
@@ -303,10 +308,6 @@
         "advisor2": {
           "name": "Jiten Shah",
           "description": "Director, World Bank Advisor (Mozambique Operations)"
-        },
-        "advisor3": {
-          "name": "Lt. Cmdr. Asutosh Mohanty (Retd.)",
-          "description": "Business Development Advisor"
         },
         "advisor4": {
           "name": "M. S. Chauhan",
